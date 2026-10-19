@@ -1,0 +1,5 @@
+colore-prototype/
+node_modules/
+.sites-cache/
+artifacts/
+*.tar.gz

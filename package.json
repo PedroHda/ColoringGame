@@ -1,0 +1,12 @@
+{
+  "name": "colore-prototype",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Um pequeno refúgio para colorir. Protótipo jogável de pintura por números.",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/art.js && node --check dist/scenes.js && node --check dist/journey.js && node --check dist/progression.js && node --check dist/difficulty.js && node --check dist/paint-effects.js && node --check dist/free-paint.js && node --check server.mjs",
+    "test": "node --test"
+  }
+}
