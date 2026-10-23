@@ -1,105 +1,77 @@
-# Colorê — pequenos mundos, grandes cores
+# Colorê — O caminho das cores
 
-Protótipo de colorir por números em português, com nove desenhos diferentes, três mundos e progressão de fases. A interface se adapta ao computador e ao celular.
+Protótipo web jogável de uma aventura de pintura pela história humana. Nove cenários ilustrados substituem as antigas figuras geométricas. A cena começa em tons de papel e cinza; tocar nas áreas com o pigmento correto revela suas cores, preservando traços, sombras e textura.
 
-## Executar
+## Rodar localmente
 
-Requer Node.js 18 ou superior. Não é necessário instalar dependências.
+Com Node.js instalado:
 
 ```powershell
-cd colore-prototype
 npm start
 ```
 
-Abra http://127.0.0.1:4173. O servidor local escuta apenas em loopback e é destinado ao desenvolvimento.
+Abra `http://127.0.0.1:4173`. Não é necessário instalar dependências de JavaScript. O servidor é somente para desenvolvimento e escuta em loopback.
 
-## Jornada
+## A nova jornada
 
-Cada mundo contém três fases. Concluir as fases anteriores abre a seguinte. Cada fase concluída vale três estrelas, uma única vez, até 27 estrelas no total. As estrelas são calculadas pelo progresso salvo; revisitar um desenho não duplica recompensas.
-
-| Mundo | Desenhos |
+| Capítulo | Caminhos |
 | --- | --- |
-| Jardim secreto | Jardim tropical, Cantinho verde, Bosque encantado |
-| Céu de sonhos | Asas de aquarela, Passeio nas nuvens, Sol em flor |
-| Mar de cores | Oceano tranquilo, Farol da enseada, Dança dos corais |
+| Primeiras marcas | Caverna, aldeia do rio, vale do Nilo |
+| Cidades e histórias | Porto grego, ponte romana, jardim medieval |
+| Novos horizontes | Praça renascentista, oficina industrial, comunidade atual |
 
-O modo livre permite pintar qualquer um dos nove desenhos. Concluir uma fase no modo livre também conta na coleção e nas estrelas, mas não elimina os pré-requisitos das fases anteriores da jornada.
+O personagem e os elementos dos cenários conectam os períodos. Ao concluir uma cena, um trecho da história apresenta o próximo lugar e libera sua fase. Os períodos são um recorte narrativo, não uma história universal completa.
 
-## Pintar e colecionar
+- Seis famílias de pigmentos, selecionáveis por clique ou teclas 1 a 6.
+- Fácil: 24 áreas; Médio: 40; Difícil: 70. Cada nível mantém seu próprio progresso.
+- A dica aponta uma área. Tab e Enter também permitem pintar.
+- Desfazer, ocultar números, ampliar a cena e tela cheia, quando suportada pelo navegador.
+- Concluir qualquer dificuldade rende três estrelas por fase, uma única vez. A sequência respeita as fases anteriores.
+- A coleção reúne cenas iniciadas e concluídas, separadas por modo.
+- Exportação real em PNG de 1600 × 1000 com as cores e os acabamentos atuais.
 
-- Selecione uma cor e pinte áreas com o mesmo número.
-- Use dicas, desfazer, zoom e ocultação dos números.
-- No computador, use as teclas 1 a 6 para selecionar cores, e Tab/Enter para pintar.
-- Volte à coleção para ver desenhos concluídos ou continuar trabalhos em andamento.
-- Exporte a arte para uma prévia PNG de 1600 × 1600; clique em Salvar PNG ou mantenha a imagem pressionada no celular.
-- Em Desenhos, crie variações locais com novas paletas, espelhamento e detalhes decorativos.
+## Ateliê livre
 
-Os números são reposicionados quando necessário para permanecer na parte visível de suas regiões. A interface respeita a preferência de movimento reduzido.
+Todos os nove cenários estão disponíveis sem bloqueio. Escolha uma cor pelo círculo de matiz e saturação, luminosidade, HEX ou canais RGB. Branco e preto também estão disponíveis.
 
-## Dados e compatibilidade
+Texturas: lisa, papel, aquarela e tecido. Brilhos: fosco, acetinado, glitter e metálico. Os efeitos são combináveis e salvos por região. Toque de novo para recolorir; use a borracha para remover a pintura. Desfazer atua nas ações desta abertura da cena.
 
-O progresso permanece em `localStorage`, no navegador e dispositivo usados. Não há conta interna nem sincronização entre dispositivos. Limpar os dados do navegador remove o progresso. Se o armazenamento estiver indisponível, o jogo informa que o progresso existe apenas na sessão.
+O ateliê não concede estrelas nem desbloqueia a jornada. A pintura preenche regiões; não há ainda pincel de traço livre.
 
-A chave `colore-studio-v1` e os identificadores dos três primeiros desenhos foram preservados. Os desenhos, as variações e o progresso da primeira versão continuam disponíveis.
+## Dados salvos
 
-## Custos e limites
+O progresso histórico usa a chave `colore-history-v1` em `localStorage`, por cena, modo e dificuldade. O navegador informa quando o armazenamento só está disponível na sessão. Limpar os dados do navegador remove as pinturas; não há sincronização entre dispositivos.
 
-O código local usa apenas HTML, CSS e JavaScript, sem bibliotecas pagas e sem chamadas de API. As fontes externas são opcionais e possuem fallback local. O jogo não exige contratar um servidor para ser executado localmente.
+As chaves do protótipo anterior, `colore-studio-v1` e `colore-freepaint-v1`, não são alteradas. Os arquivos vetoriais antigos continuam no repositório para preservar o trabalho e seus testes; a página inicial agora carrega a experiência histórica.
 
-O link publicado usa Sites, cujo acesso e condições dependem do plano ChatGPT. A criação pelo Codex usa os limites do plano. Esta amostra não gera imagens com IA, não usa SQLite e não é um APK. Uma futura integração com um serviço de IA pode ter custos adicionais.
+## Implementação
 
-## Arquivos principais
+- `dist/index.html`: estrutura da nova interface.
+- `dist/history/app.js`: navegação, história, pintura, materiais e diálogos.
+- `dist/history/painter.js`: renderização Canvas, toque por região, números acessíveis e exportação.
+- `dist/history/state.js`: persistência validada, desbloqueios, recompensas e descompressão dos mapas.
+- `dist/history/scenes.js`: narrativa, capítulos e pigmentos.
+- `dist/history/style.css`: visual de papel, pigmentos e adaptação para telas menores.
+- `dist/history/images/`: as nove ilustrações originais geradas para esta direção de arte.
+- `dist/history/regions/`: 27 mapas de áreas pintáveis compactados em nove arquivos JSON.
+- `dist/paint-effects.js`: conversões de cor e prévias dos materiais.
+- `scripts/build-history-regions.py`: preparação reproduzível dos mapas com Python, Pillow e NumPy; não é necessária para jogar.
 
-- `dist/art.js`: os três desenhos originais, as paletas e a renderização SVG.
-- `dist/scenes.js`: seis novas ilustrações com regiões pintáveis.
-- `dist/progression.js`: regras de conclusão, estrelas e desbloqueios.
-- `dist/journey.js`: mapa, biblioteca, filtros e coleção.
-- `dist/app.js`: pintura, persistência, navegação, dicas e exportação.
-- `dist/journey.css`: o visual da jornada e a adaptação para celular.
+Os mapas são calculados a partir das cores e da continuidade espacial da imagem. As áreas são conectadas e os números ficam dentro delas. São agrupamentos de pintura para este protótipo, não recortes semânticos manuais de cada objeto; alguns agrupamentos incluem partes de objetos próximos. Os três níveis usam mapas diferentes.
+
+Na jornada, o preenchimento restaura a ilustração da região, em vez de cobri-la com cor chapada. Trechos neutros das artes conceituais recebem pigmentos suaves mantendo sua luminosidade. No ateliê, o Canvas aplica a cor escolhida preservando o desenho e simula os acabamentos de forma estática.
 
 ## Verificar
 
 ```powershell
-npm test
 npm run check
+npm test
 ```
 
-Os testes cobrem início da jornada, progresso da versão anterior, pré-requisitos, modo livre, recompensas, dados de regiões e conclusão de todas as fases.
+Os testes incluem a cobertura de todos os pixels dos 27 mapas, conectividade de cada área, posicionamento dos números, persistência validada, separação entre modos e dificuldades, sequência da história e estrelas sem duplicação. Os testes do protótipo vetorial anterior também são preservados.
 
-## Dificuldades
+## Limites desta amostra
 
-Cada um dos nove desenhos e das variações locais possui três versões jogáveis:
+O visual tem profundidade ilustrada em 2D; não há um mundo 3D com movimentação livre. A progressão ocorre entre cenas e capítulos, com o personagem presente nas ilustrações. Roupas personalizáveis, economia, compras e ferramentas com gestos físicos diferentes não estão implementadas. A exportação e os materiais funcionam sem APIs pagas. As fontes externas são opcionais, com alternativas locais.
 
-| Nível | Cores | O que muda |
-| --- | --- | --- |
-| Fácil | 4 | Remove pequenos detalhes e simplifica a paleta. |
-| Médio | 6 | Preserva exatamente as regiões da versão anterior. |
-| Difícil | 8 | Divide regiões em partes menores e acrescenta detalhes. |
-
-Na tela Desenhos, o seletor de dificuldade combina com os filtros por mundo. Durante a pintura, o nível pode ser alterado pelo seletor acima do desenho. Cada dificuldade mantém seu próprio progresso: mudar de nível não apaga uma pintura anterior.
-
-Concluir qualquer dificuldade libera a fase seguinte, respeitando os pré-requisitos da jornada. Completar o mesmo desenho em outros níveis não duplica as três estrelas daquela fase. A coleção identifica a dificuldade de cada trabalho.
-
-Na jornada, cada capítulo sugere Fácil, Médio e Difícil, nessa ordem. Um trabalho antigo ou já iniciado é retomado no nível correspondente. O nível Médio conserva os IDs originais para manter a compatibilidade do progresso salvo.
-
-As subdivisões difíceis são vetores SVG com recortes e contornos reais, não apenas um rótulo visual. O posicionamento dos números considera esses recortes. O PNG exportado identifica a dificuldade.
-
-`dist/difficulty.js` define as três versões e suas paletas. Os testes adicionais verificam quantidade de regiões, cores, recortes SVG, compatibilidade, independência do progresso e recompensas.
-
-## Pintura livre
-
-A aba **Pintura livre** abre um ateliê separado da jornada por números. Os nove desenhos têm as três quantidades de detalhes disponíveis, sem bloqueio de fases. Toque em uma região para preenchê-la com qualquer cor; uma região pintada continua disponível para trocar sua cor e seu acabamento.
-
-- Círculo de cores com matiz e saturação, controle de luminosidade, campos RGB (0–255) e hexadecimal, incluindo branco e preto.
-- Texturas lisa, papel granulado, aquarela e tecido; acabamentos fosco, acetinado, glitter e metálico. Textura e brilho podem ser combinados e são salvos por região.
-- Borracha, desfazer nesta sessão por desenho, zoom e até oito cores usadas recentemente.
-- A criação é salva automaticamente na chave separada `colore-freepaint-v1`, por desenho e dificuldade. Ela aparece ao reabrir a mesma ilustração na aba Pintura livre. As estrelas e a coleção da jornada continuam vinculadas à pintura por números.
-- O PNG de 1600 × 1600 usa os mesmos padrões SVG da tela e inclui as texturas e brilhos. Não há cobrança de API para esses efeitos.
-
-Os acabamentos são simulações vetoriais estáticas, sem pinceladas livres ou animação de luz. A pintura preenche regiões delimitadas. Os campos de cor e botões também são acessíveis por teclado; no círculo, as setas horizontais mudam o tom e as verticais ajustam a saturação.
-
-`dist/free-paint.js` e `dist/free-paint.css` definem o ateliê; `dist/paint-effects.js` define conversões de cor, validação dos dados e padrões SVG. Os testes verificam conversões RGB, dados persistidos, separação da jornada, recortes e exportação das 16 combinações de materiais.
-
-## Tecnologias usadas
-
-HTML estrutura as telas, CSS define o visual e JavaScript implementa pintura, navegação, fases e persistência. As ilustrações são SVG. O servidor de desenvolvimento usa Node.js. O projeto não exige instalação de bibliotecas para rodar ou testar.
+Este projeto continua sendo um protótipo de navegador, não um APK ou aplicativo Flutter. As condições de hospedagem e de uso do ChatGPT dependem do plano; o jogo em si não realiza chamadas de IA nem cobranças.
