@@ -1,0 +1,1185 @@
+{
+  "schemaVersion": 1,
+  "note": "15 caminhos temáticos, não uma cronologia universal. Só asset !== null indica uma arte instalada e validada.",
+  "paths": [
+    {
+      "id": "path-01",
+      "index": 0,
+      "title": "As primeiras marcas",
+      "era": "Sociedades humanas na Pré-história",
+      "intro": "Sua viagem começa onde alguém observou uma pedra, uma chama e um gesto. Diferentes grupos humanos criaram modos de viver e de contar histórias. Você carrega um caderno aberto: cada página será um encontro, não uma corrida entre povos.",
+      "outro": "Marcas podem guardar memórias além de uma única vida. Nas próximas páginas, você encontrará comunidades que aprenderam a cultivar, criar e compartilhar perto dos rios.",
+      "reward": "Paleta dos pigmentos da terra",
+      "palette": [
+        "#A45A3A",
+        "#C99B48",
+        "#635544",
+        "#788368",
+        "#D8C9A6"
+      ],
+      "stages": [
+        {
+          "id": "p01-s01",
+          "pathId": "path-01",
+          "index": 0,
+          "title": "O despertar da humanidade",
+          "intro": "Observe um acampamento junto a um vale. Pessoas reúnem alimentos, cuidam umas das outras e reconhecem caminhos. Sua primeira página celebra a cooperação e a curiosidade.",
+          "outro": "O caderno recebeu suas primeiras cores. Ao cair da tarde, uma parede protegida pela rocha convida você a deixar uma história.",
+          "asset": "/illustrations/p01-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p01-s02",
+          "pathId": "path-01",
+          "index": 1,
+          "title": "As pinturas nas cavernas",
+          "intro": "Dentro do abrigo, mãos e animais aparecem em uma parede. Pigmentos minerais e gestos diferentes transformam a rocha em memória. Você pode escolher as cores dessa lembrança.",
+          "outro": "A parede conta uma história, e a pequena fogueira ao lado promete outra: reunir pessoas em torno do calor.",
+          "asset": "/illustrations/p01-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "01-primeiras-marcas"
+        },
+        {
+          "id": "p01-s03",
+          "pathId": "path-01",
+          "index": 2,
+          "title": "O domínio do fogo",
+          "intro": "Uma chama pede cuidado, combustível e atenção. Ao redor dela, o grupo prepara alimentos e compartilha o espaço protegido. O fogo muda o ritmo da noite.",
+          "outro": "A luz revelou pequenas pedras e fibras sobre uma esteira. Amanhã, elas ganharão novas formas nas mãos de quem as trabalha.",
+          "asset": "/illustrations/p01-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p01-s04",
+          "pathId": "path-01",
+          "index": 3,
+          "title": "Ferramentas e sobrevivência",
+          "intro": "Pedra, madeira e fibras podem se tornar instrumentos. Um gesto cuidadoso dá forma a uma lâmina; outro entrelaça uma corda. Não há uma invenção solitária, mas saberes aprendidos e transmitidos.",
+          "outro": "Ferramentas prontas viajam em pequenas bolsas. Um caminho entre colinas leva ao encontro de outro grupo.",
+          "asset": "/illustrations/p01-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p01-s05",
+          "pathId": "path-01",
+          "index": 4,
+          "title": "Os primeiros encontros",
+          "intro": "Na passagem do vale, grupos compartilham alimentos, objetos e notícias. Encontrar outras pessoas também é reconhecer diferenças. Deixe no caderno uma página de troca e acolhimento.",
+          "outro": "Você leva uma semente como lembrança. Ela abre uma nova pergunta: como seria cuidar de plantas e voltar ao mesmo lugar por muitas estações?",
+          "asset": "/illustrations/p01-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-02",
+      "index": 1,
+      "title": "O nascimento das aldeias",
+      "era": "Agricultura e comunidades em diferentes regiões",
+      "intro": "Agricultura e criação de animais surgiram em diferentes lugares e momentos. Nem todos abandonaram outras formas de vida. Nesta página, você acompanha uma comunidade e as escolhas que ligam sementes, água e cuidado.",
+      "outro": "Os caminhos da aldeia seguem junto às águas. Sua viagem agora compara cidades de rios distantes, cada uma com seu contexto e sua própria história.",
+      "reward": "Paleta de argilas e fibras",
+      "palette": [
+        "#9A603D",
+        "#B98657",
+        "#8F9C54",
+        "#D9C99F",
+        "#688A8A"
+      ],
+      "stages": [
+        {
+          "id": "p02-s01",
+          "pathId": "path-02",
+          "index": 0,
+          "title": "As primeiras plantações",
+          "intro": "Sementes guardadas encontram a terra preparada. Canais pequenos levam água aos canteiros, enquanto outras pessoas continuam a coletar alimentos. Cultivar é observar muitas estações.",
+          "outro": "As plantas crescem devagar. Perto das casas, os cuidados também se estendem aos animais.",
+          "asset": "/illustrations/p02-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p02-s02",
+          "pathId": "path-02",
+          "index": 1,
+          "title": "A domesticação dos animais",
+          "intro": "O cercado, a água e o alimento fazem parte de uma relação que se transforma ao longo de gerações. Animais não são apenas recursos: exigem cuidado diário. Observe como o trabalho organiza o espaço da aldeia.",
+          "outro": "O portão do cercado se abre para a rua de terra. Siga até o rio, onde a vida da comunidade se encontra.",
+          "asset": "/illustrations/p02-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p02-s03",
+          "pathId": "path-02",
+          "index": 2,
+          "title": "A aldeia do rio",
+          "intro": "O rio aproxima plantações, casas e pequenos barcos. Entre os caminhos de terra, cada atividade depende de outras. Você reconhece aqui uma memória da primeira jornada do Colorê.",
+          "outro": "Da margem, uma peça de argila ainda úmida chama sua atenção. A próxima página acompanha as mãos que a modelam.",
+          "asset": "/illustrations/p02-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "02-a-aldeia-do-rio"
+        },
+        {
+          "id": "p02-s04",
+          "pathId": "path-02",
+          "index": 3,
+          "title": "Cerâmica e artesanato",
+          "intro": "A argila pode guardar água, sementes e histórias. Uma pessoa modela um vaso, outra prepara fibras para um cesto. Cada objeto nasce de tempo, habilidade e materiais do lugar.",
+          "outro": "Vasos e cestos chegam a uma área comum. Um espaço de encontro está tomando forma entre as casas.",
+          "asset": "/illustrations/p02-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p02-s05",
+          "pathId": "path-02",
+          "index": 4,
+          "title": "O crescimento das comunidades",
+          "intro": "Mais casas não significam uma vida igual para todos. Dividir trabalho, armazenar alimentos e decidir juntos traz novas possibilidades e tensões. Sua pintura mostra pessoas que constroem um lugar em comum.",
+          "outro": "As águas continuam além das plantações. No caderno, quatro vales diferentes esperam por você.",
+          "asset": "/illustrations/p02-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-03",
+      "index": 2,
+      "title": "As grandes civilizações fluviais",
+      "era": "Mesopotâmia, Egito, vale do Indo e China antiga",
+      "intro": "Rios não criam cidades sozinhos: comunidades organizam trabalho, trocas e formas de poder ao seu redor. Viaje entre regiões sem tratá-las como uma única civilização. Cada parada oferece uma paisagem e perguntas próprias.",
+      "outro": "Da cidade de tijolos ao vale cercado de montanhas, você encontrou muitas formas de construir. Agora siga os sinais, medidas e observações que ajudaram a compartilhar conhecimentos.",
+      "reward": "Paleta dos grandes rios",
+      "palette": [
+        "#C29446",
+        "#4D8FA2",
+        "#5A866A",
+        "#B46B4F",
+        "#D8C7A0"
+      ],
+      "stages": [
+        {
+          "id": "p03-s01",
+          "pathId": "path-03",
+          "index": 0,
+          "title": "A Mesopotâmia",
+          "intro": "Entre os rios Tigre e Eufrates, canais cruzam campos e cidades. Barcos levam grãos e cerâmicas até um porto de tijolos. Observe o trabalho cotidiano além dos grandes monumentos.",
+          "outro": "Uma pequena tabuleta passa de mão em mão. Ela guardará uma história em outro caminho; antes, o caderno se abre para o Nilo.",
+          "asset": "/illustrations/p03-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p03-s02",
+          "pathId": "path-03",
+          "index": 1,
+          "title": "O vale do Nilo",
+          "intro": "O rio, as plantações e as oficinas sustentam a vida ao redor dos monumentos. Sua página reúne pessoas que navegam, cultivam e trabalham a pedra. A antiga cena do vale retorna em uma nova ilustração para pintar.",
+          "outro": "Uma embarcação segue pela corrente. Vire a página: outra grande rede de cidades cresceu muito longe destas margens.",
+          "asset": "/illustrations/p03-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "03-o-vale-do-nilo"
+        },
+        {
+          "id": "p03-s03",
+          "pathId": "path-03",
+          "index": 2,
+          "title": "A civilização do Indo",
+          "intro": "Ruas planejadas, tijolos e sistemas de água marcam cidades do vale do Indo. Muitos aspectos de suas sociedades continuam em estudo. Pinte com curiosidade, sem preencher com certezas aquilo que ainda não sabemos.",
+          "outro": "Pequenos selos viajam com objetos de troca. Ao longe, a próxima página apresenta uma cidade de outra região fluvial.",
+          "asset": "/illustrations/p03-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p03-s04",
+          "pathId": "path-03",
+          "index": 3,
+          "title": "A China antiga",
+          "intro": "Nas margens do rio, trabalhadores modelam argila, cultivam e produzem objetos de bronze. Diferentes dinastias e comunidades deixaram vestígios variados. Esta parada observa uma cidade do período Shang.",
+          "outro": "O sino da oficina ecoa pela rua. Você reúne suas lembranças para olhar de novo para os espaços de cada cidade.",
+          "asset": "/illustrations/p03-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p03-s05",
+          "pathId": "path-03",
+          "index": 4,
+          "title": "Monumentos e cidades",
+          "intro": "Um monumento exige muito mais que um projeto: materiais, transporte e o trabalho de muitas pessoas. Nesta cidade mesopotâmica, a vida cotidiana segue ao redor da construção. Dê atenção também aos pequenos objetos e caminhos.",
+          "outro": "No caderno, o grande edifício divide espaço com uma tabuleta. O próximo caminho começa nos sinais usados para registrar o mundo.",
+          "asset": "/illustrations/p03-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-04",
+      "index": 3,
+      "title": "O surgimento dos conhecimentos",
+      "era": "Registros, observação e circulação de saberes antigos",
+      "intro": "Escrever, contar, construir e observar o céu tiveram muitas histórias. Você seguirá saberes que se desenvolveram em sociedades diferentes e circularam por contatos e traduções. Nenhuma página contém todo o conhecimento.",
+      "outro": "Objetos e ideias viajaram juntos, mudando em cada encontro. O próximo caminho acompanha cidades mediterrâneas conectadas por portos, estradas e disputas de poder.",
+      "reward": "Paleta dos registros e das estrelas",
+      "palette": [
+        "#88654A",
+        "#BF9456",
+        "#576A92",
+        "#AD7352",
+        "#DCCFAC"
+      ],
+      "stages": [
+        {
+          "id": "p04-s01",
+          "pathId": "path-04",
+          "index": 0,
+          "title": "O nascimento da escrita",
+          "intro": "Em uma escola de escribas, sinais são marcados em argila úmida. Escritas surgiram de maneiras diferentes em mais de uma região. Aqui, os registros ajudam a acompanhar quantidades e acordos.",
+          "outro": "As marcas também podem contar. Na página seguinte, números e observações vão se encontrar sob um céu aberto.",
+          "asset": "/illustrations/p04-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p04-s02",
+          "pathId": "path-04",
+          "index": 1,
+          "title": "Matemática e astronomia",
+          "intro": "A posição de uma estrela, a sombra de uma haste e a medida de um campo podem trazer novas perguntas. Observadores da Babilônia registram regularidades no céu. Seus métodos pertencem ao tempo e ao lugar em que vivem.",
+          "outro": "Os registros se acumulam com as observações. Uma biblioteca espera para guardá-los e colocá-los em conversa.",
+          "asset": "/illustrations/p04-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p04-s03",
+          "pathId": "path-04",
+          "index": 2,
+          "title": "As primeiras bibliotecas",
+          "intro": "Estantes e recipientes organizam textos que precisam de cuidado. Em Alexandria, leitores e copistas trabalham com rolos de papiro. Bibliotecas são também escolhas sobre o que preservar e quem pode acessar.",
+          "outro": "Uma página desenha uma coluna e algumas medidas. Ao sair, você encontrará a relação entre observação e construção.",
+          "asset": "/illustrations/p04-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p04-s04",
+          "pathId": "path-04",
+          "index": 3,
+          "title": "Arquitetura monumental",
+          "intro": "Uma construção se apoia em cálculos, técnicas e no esforço de muita gente. Na oficina, modelos e instrumentos ajudam a imaginar o edifício. Sua pintura pode revelar tanto o projeto quanto as mãos que o tornam possível.",
+          "outro": "Cordas são guardadas e os materiais seguem pela estrada. A próxima página acompanha trocas que espalham conhecimentos.",
+          "asset": "/illustrations/p04-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p04-s05",
+          "pathId": "path-04",
+          "index": 4,
+          "title": "Comércio e conhecimento",
+          "intro": "No mercado do porto, instrumentos e histórias chegam em muitas línguas. Comerciantes dependem de caminhos, confiança e negociações. Ao viajar, um conhecimento pode ganhar novos usos.",
+          "outro": "Você guarda no caderno o desenho de uma pequena embarcação. Ela leva sua jornada até as cidades do Mediterrâneo.",
+          "asset": "/illustrations/p04-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-05",
+      "index": 4,
+      "title": "Cidades e impérios antigos",
+      "era": "Mundos gregos e romanos no Mediterrâneo",
+      "intro": "Praças, portos e estradas conectam cidades, mas também mostram desigualdades e relações de poder. Nesta parte da viagem, acompanhe ofícios e encontros nos mundos grego e romano. As ruínas conhecidas voltam a ser lugares de vida.",
+      "outro": "Impérios mudam e conexões continuam. Seu caderno agora cruza outras regiões, sem colocar um único centro no meio de toda a história.",
+      "reward": "Paleta mediterrânea e dos mosaicos",
+      "palette": [
+        "#598A9B",
+        "#C08D4D",
+        "#A65C42",
+        "#748454",
+        "#DBCCA9"
+      ],
+      "stages": [
+        {
+          "id": "p05-s01",
+          "pathId": "path-05",
+          "index": 0,
+          "title": "As cidades gregas",
+          "intro": "Uma praça reúne lojas, caminhantes e conversas. As cidades gregas tinham instituições e histórias diferentes; nem todos participavam de suas decisões. Observe o cotidiano entre as colunas e os telhados.",
+          "outro": "Ao fim da rua, você escuta o movimento do cais. As ideias também chegam e partem por água.",
+          "asset": "/illustrations/p05-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p05-s02",
+          "pathId": "path-05",
+          "index": 1,
+          "title": "O porto das ideias",
+          "intro": "Cerâmicas, tecidos e histórias atravessam o mar. No porto, uma oficina pinta vasos enquanto viajantes descarregam a embarcação. Esta nova página retoma uma cena importante do primeiro Colorê.",
+          "outro": "O desenho de um vaso se junta às suas memórias. Uma estrada de pedra leva você até outra cidade antiga.",
+          "asset": "/illustrations/p05-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "04-o-porto-das-ideias"
+        },
+        {
+          "id": "p05-s03",
+          "pathId": "path-05",
+          "index": 2,
+          "title": "A Roma antiga",
+          "intro": "Fontes, oficinas e moradias dividem o espaço de uma cidade romana. A paisagem monumental depende de trabalhadores de condições muito diferentes. Olhe além dos arcos e procure os detalhes da rua.",
+          "outro": "A água atravessa a cidade por canais elevados. Você segue seu caminho até uma ponte que aproxima margens.",
+          "asset": "/illustrations/p05-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p05-s04",
+          "pathId": "path-05",
+          "index": 3,
+          "title": "Pontes, estradas e aquedutos",
+          "intro": "A ponte torna possível atravessar o rio, enquanto o aqueduto leva água por longas distâncias. Essas obras conectam lugares e atendem a diferentes interesses. No mosaico da viagem, cada caminho depende de muitos outros.",
+          "outro": "A estrada continua além dos arcos. Ao caminhar, você percebe que monumentos também mudam com o tempo.",
+          "asset": "/illustrations/p05-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "05-a-ponte-dos-encontros"
+        },
+        {
+          "id": "p05-s05",
+          "pathId": "path-05",
+          "index": 4,
+          "title": "A transformação dos impérios",
+          "intro": "Uma rua antiga recebe novos usos, consertos e moradores. Transformações políticas não apagam de uma vez os lugares e saberes. Nesta página, continuidade e mudança aparecem lado a lado.",
+          "outro": "Seu caderno já passou por muitas cidades. Agora ele se abre para reinos e sociedades de outras partes do mundo.",
+          "asset": "/illustrations/p05-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-06",
+      "index": 5,
+      "title": "Povos e civilizações do mundo",
+      "era": "África, Américas e Ásia em conexões próprias",
+      "intro": "Você abre o mapa para outras rotas. Reinos africanos, cidades americanas e sociedades asiáticas não são notas de uma história alheia: cada lugar tem sua própria trajetória. As cenas são paradas específicas, não retratos de um continente inteiro.",
+      "outro": "As rotas apresentam encontros, mudanças e diferenças. O caminho seguinte volta a vários centros medievais, onde construir, estudar e criar também aconteciam de formas diversas.",
+      "reward": "Paleta dos encontros e das rotas",
+      "palette": [
+        "#A26C4E",
+        "#CEAD57",
+        "#5E886D",
+        "#577D9A",
+        "#9C6680"
+      ],
+      "stages": [
+        {
+          "id": "p06-s01",
+          "pathId": "path-06",
+          "index": 0,
+          "title": "Uma cidade do reino de Mali",
+          "intro": "Em Djenné, construções de terra e mercados fazem parte de uma paisagem ligada a rotas comerciais. Trabalhadores mantêm as fachadas com técnicas do lugar. A cidade se transforma pelo cuidado de quem vive nela.",
+          "outro": "Tecidos e objetos revelam habilidades compartilhadas. Vire a página para uma cidade americana com outra relação entre terra e água.",
+          "asset": "/illustrations/p06-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p06-s02",
+          "pathId": "path-06",
+          "index": 1,
+          "title": "Uma cidade nas Américas",
+          "intro": "No vale do México, canais aproximam moradias, mercados e áreas de cultivo. Canoas passam entre chinampas, onde se organiza parte do trabalho agrícola. Você observa uma cidade mexica antes da conquista europeia.",
+          "outro": "Uma canoa deixa o cais e some entre os canais. A próxima página acompanha um reino que se desenvolveu do outro lado do oceano.",
+          "asset": "/illustrations/p06-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p06-s03",
+          "pathId": "path-06",
+          "index": 2,
+          "title": "Os templos de Angkor",
+          "intro": "Reservatórios e canais ajudam a compreender a paisagem de Angkor. Além dos templos, há casas, plantações e pessoas cuidando da água. Conheça uma parte do mundo khmer sem reduzi-la aos seus monumentos.",
+          "outro": "A água acompanha a saída da cidade. Por terra e por mar, outras redes ligam regiões distantes.",
+          "asset": "/illustrations/p06-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p06-s04",
+          "pathId": "path-06",
+          "index": 3,
+          "title": "As grandes rotas comerciais",
+          "intro": "Em um pátio de pouso, viajantes alimentam animais e organizam mercadorias. As chamadas rotas da seda eram redes variadas, com muitos intermediários. Objetos e histórias podiam mudar de rumo em cada parada.",
+          "outro": "Uma peça de cerâmica revela motivos que lembram outros lugares. A próxima página observa como encontros também transformam a criação.",
+          "asset": "/illustrations/p06-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p06-s05",
+          "pathId": "path-06",
+          "index": 4,
+          "title": "Encontros culturais",
+          "intro": "Em um porto do oceano Índico, formas de construir e de trabalhar dialogam com viagens antigas. Trocas não tornam todas as pessoas iguais nem acontecem sempre em condições justas. Observe os detalhes que mostram diferentes histórias no mesmo lugar.",
+          "outro": "Você leva muitas perguntas no caderno. Um conjunto de novos jardins, mercados e bibliotecas convida a continuar.",
+          "asset": "/illustrations/p06-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-07",
+      "index": 6,
+      "title": "A era medieval",
+      "era": "Múltiplos centros de vida e saber na Idade Média",
+      "intro": "A palavra medieval reúne séculos e espaços muito diferentes. Entre fortificações, mercados e centros de estudo, você encontrará pessoas trabalhando, lendo e cultivando. A viagem aproxima alguns lugares sem fingir que todos viveram a mesma experiência.",
+      "outro": "Um manuscrito guarda mapas e observações sobre viagens. Você seguirá embarcações e instrumentos, lembrando que navegar também envolveu conflitos e relações desiguais.",
+      "reward": "Paleta dos jardins e manuscritos",
+      "palette": [
+        "#738257",
+        "#8D5F71",
+        "#C19B54",
+        "#5B7E97",
+        "#D9CFAC"
+      ],
+      "stages": [
+        {
+          "id": "p07-s01",
+          "pathId": "path-07",
+          "index": 0,
+          "title": "Castelos e fortalezas",
+          "intro": "A muralha organiza a paisagem e marca relações de proteção e poder. Fora dela, campos e oficinas sustentam a vida. Sua pintura acompanha o caminho de quem atravessa o portão todos os dias.",
+          "outro": "Da entrada da fortaleza, uma rua de pedra leva ao mercado. Ali, a vida medieval ganha outros sons e objetos.",
+          "asset": "/illustrations/p07-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p07-s02",
+          "pathId": "path-07",
+          "index": 1,
+          "title": "Vilas e mercados",
+          "intro": "Tecidos, pão e ferramentas chegam às bancas. As cidades medievais possuíam redes de trabalho e regras próprias. Entre os telhados, procure os pequenos sinais dessas atividades.",
+          "outro": "Uma encadernadora entrega um volume a um visitante. O livro segue para um jardim silencioso.",
+          "asset": "/illustrations/p07-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p07-s03",
+          "pathId": "path-07",
+          "index": 2,
+          "title": "Jardins e manuscritos",
+          "intro": "Entre canteiros e mesas, páginas recebem desenhos e registros. Jardins podem reunir plantas para alimentação, cuidado e estudo. A antiga cena do Colorê retorna como um espaço de observação e memória.",
+          "outro": "Ao fechar o livro, você encontra uma indicação de outra casa de estudos. Conhecimentos circulam por cópias, viagens e traduções.",
+          "asset": "/illustrations/p07-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "06-o-jardim-das-historias"
+        },
+        {
+          "id": "p07-s04",
+          "pathId": "path-07",
+          "index": 3,
+          "title": "Centros de conhecimento",
+          "intro": "Em Bagdá, estudiosos discutem, traduzem e copiam textos. Trabalhos de muitas origens entram em diálogo e geram novas perguntas. Conhecer também é revisar, experimentar e partilhar.",
+          "outro": "Um desenho de arcos ganha anotações na margem. A próxima página reúne saberes de construção e criação.",
+          "asset": "/illustrations/p07-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p07-s05",
+          "pathId": "path-07",
+          "index": 4,
+          "title": "Arte e arquitetura medieval",
+          "intro": "Em uma oficina, artesãos organizam padrões, pedra e madeira para um edifício. Técnicas viajam, mas ganham formas ligadas a cada lugar. Nesta cidade, a criação é um trabalho coletivo.",
+          "outro": "Uma estrada passa pelo edifício em construção e chega ao porto. No horizonte, novas rotas vão ampliar e abalar o mundo conhecido.",
+          "asset": "/illustrations/p07-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-08",
+      "index": 7,
+      "title": "Navegação e transformações",
+      "era": "Oceanos e sociedades em contato, séculos XV–XVII",
+      "intro": "Povos navegaram mares muito antes das viagens europeias do período moderno. Agora, novas conexões oceânicas ampliam trocas e também invasões, exploração e perdas. Seu caderno acompanha técnicas e pessoas sem celebrar a conquista como um encontro igual.",
+      "outro": "As rotas mudaram o acesso a materiais e ideias, com custos muito desiguais. A próxima parada visita oficinas de arte, mantendo essas conexões no horizonte.",
+      "reward": "Paleta dos oceanos e das rotas",
+      "palette": [
+        "#527F9C",
+        "#688B81",
+        "#BE9B5B",
+        "#A8684F",
+        "#DDCEA6"
+      ],
+      "stages": [
+        {
+          "id": "p08-s01",
+          "pathId": "path-08",
+          "index": 0,
+          "title": "Grandes embarcações",
+          "intro": "No estaleiro, madeira, cordas e velas são preparadas por muitos trabalhadores. Uma viagem depende de conhecimentos acumulados em diferentes tradições marítimas. Observe a embarcação como resultado desse trabalho.",
+          "outro": "A embarcação ganha água e provisões. No caderno, o mar se abre como caminho e como incerteza.",
+          "asset": "/illustrations/p08-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p08-s02",
+          "pathId": "path-08",
+          "index": 1,
+          "title": "Rotas marítimas",
+          "intro": "O oceano já era conhecido por pescadores, comerciantes e navegadores de muitas regiões. Ventos e correntes orientam percursos que nem sempre aparecem nos mesmos mapas. Nesta página, acompanhe uma tripulação no oceano Índico.",
+          "outro": "A tripulação observa o céu e consulta instrumentos. Na próxima página, esses pequenos objetos entram em primeiro plano.",
+          "asset": "/illustrations/p08-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p08-s03",
+          "pathId": "path-08",
+          "index": 2,
+          "title": "Instrumentos de navegação",
+          "intro": "O astrolábio, a bússola e as observações do céu ajudam a decidir rumos. Nenhum instrumento elimina os riscos do mar. Seus usos dependem de prática, transmissão e da experiência de quem navega.",
+          "outro": "Os instrumentos voltam à caixa. A terra aparece adiante, mas a chegada pode significar coisas muito diferentes para quem vem e para quem já vive ali.",
+          "asset": "/illustrations/p08-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p08-s04",
+          "pathId": "path-08",
+          "index": 3,
+          "title": "Encontros entre sociedades",
+          "intro": "Uma costa reúne pessoas com expectativas e poderes diferentes. Trocas também aconteceram sob violência e imposição, especialmente na colonização. Esta cena privilegia a presença e a autonomia da comunidade que já vivia no lugar.",
+          "outro": "O caderno guarda perguntas, não uma celebração simples. A próxima página observa como a vida cotidiana foi transformada por essas conexões.",
+          "asset": "/illustrations/p08-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p08-s05",
+          "pathId": "path-08",
+          "index": 4,
+          "title": "Transformações do mundo conhecido",
+          "intro": "Plantas, alimentos, objetos e pessoas atravessaram oceanos em condições muito distintas. Esses movimentos trouxeram mudanças profundas, incluindo exploração e deslocamentos forçados. Em um jardim, cada espécie pode levar a uma história complexa.",
+          "outro": "Você registra uma folha e uma rota na mesma página. Ao seguir, encontrará oficinas que testam novas formas de olhar e representar.",
+          "asset": "/illustrations/p08-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-09",
+      "index": 8,
+      "title": "O renascimento das artes",
+      "era": "Oficinas e observação nos séculos XV–XVI",
+      "intro": "Em algumas cidades europeias, artistas retomam referências antigas e experimentam novas técnicas. Essa produção depende de oficinas, encomendas e redes de materiais que chegam de muitos lugares. Você entra como aprendiz de observação, com liberdade para pintar.",
+      "outro": "As páginas de desenho também servem para formular perguntas. Sua jornada segue para instrumentos, estudos da natureza e novas formas de comunicação.",
+      "reward": "Paleta dos ateliês e dos pigmentos",
+      "palette": [
+        "#AF674F",
+        "#718AA1",
+        "#8E8C59",
+        "#C5A05D",
+        "#BD8C82"
+      ],
+      "stages": [
+        {
+          "id": "p09-s01",
+          "pathId": "path-09",
+          "index": 0,
+          "title": "A praça dos artistas",
+          "intro": "Cavaletes e pigmentos ocupam uma praça de fachadas detalhadas. Artistas observam, negociam e aprendem juntos. A cena clássica do Colorê se transforma em uma página inteiramente aberta às suas cores.",
+          "outro": "Um aprendiz leva uma tábua para dentro da oficina. Você acompanha o processo além da praça.",
+          "asset": "/illustrations/p09-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "07-a-praca-dos-artistas"
+        },
+        {
+          "id": "p09-s02",
+          "pathId": "path-09",
+          "index": 1,
+          "title": "Oficinas de pintura",
+          "intro": "A oficina mistura preparação de superfícies, moagem de pigmentos e estudo do desenho. Muitos trabalhos são coletivos, mesmo quando um nome fica mais conhecido. Dê atenção às tarefas de cada pessoa.",
+          "outro": "Os potes são organizados ao lado de um molde de gesso. Na próxima página, a imagem ganha volume.",
+          "asset": "/illustrations/p09-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p09-s03",
+          "pathId": "path-09",
+          "index": 2,
+          "title": "Esculturas e arquitetura",
+          "intro": "Uma pedra recebe marcas cuidadosas antes de mudar de forma. Modelos ajudam a relacionar corpo, espaço e edifício. Aprender a construir uma imagem exige olhar e testar.",
+          "outro": "Perto dos modelos, há páginas com folhas e mecanismos. O desenho também pode investigar o funcionamento do mundo.",
+          "asset": "/illustrations/p09-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p09-s04",
+          "pathId": "path-09",
+          "index": 3,
+          "title": "Estudos científicos",
+          "intro": "No caderno de estudos, uma planta divide espaço com uma roda dentada. Desenhar ajuda a observar e comparar. Algumas ideias funcionarão; outras permanecerão como tentativas.",
+          "outro": "A observação abriu novas perguntas sobre luz e distância. Você leva essas perguntas para o próximo trabalho artístico.",
+          "asset": "/illustrations/p09-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p09-s05",
+          "pathId": "path-09",
+          "index": 4,
+          "title": "Novas técnicas artísticas",
+          "intro": "Uma grade e linhas de perspectiva ajudam a representar o espaço. Técnicas podem orientar o olhar sem limitar a imaginação. Nesta última página do caminho, escolha suas próprias cores para um ateliê cheio de possibilidades.",
+          "outro": "As linhas apontam para uma mesa de instrumentos. O próximo caminho continua a curiosidade em laboratórios, jardins e oficinas.",
+          "asset": "/illustrations/p09-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-10",
+      "index": 9,
+      "title": "Ciência e invenções",
+      "era": "Observação e experimentação, séculos XVII–XIX",
+      "intro": "Instrumentos ampliam a observação, mas toda descoberta depende de perguntas, trabalho e contexto. Nesta etapa, acompanhe diferentes espaços de estudo sem imaginar uma ciência feita por pessoas isoladas. Seus desenhos também registram quem costuma ficar fora dos retratos conhecidos.",
+      "outro": "Instrumentos e processos transformam oficinas em novos sistemas de produção. O próximo caminho acompanha máquinas e trabalhadores, com atenção às mudanças e seus custos.",
+      "reward": "Paleta dos instrumentos e descobertas",
+      "palette": [
+        "#8F7353",
+        "#6B8F8B",
+        "#B5A062",
+        "#7A7E9E",
+        "#D9CFB5"
+      ],
+      "stages": [
+        {
+          "id": "p10-s01",
+          "pathId": "path-10",
+          "index": 0,
+          "title": "Instrumentos científicos",
+          "intro": "Lentes, medidas e ajustes tornam visível o que antes escapava ao olhar. Na oficina, fabricar um instrumento também exige pesquisa. Observe as mãos que tornam possível a experiência.",
+          "outro": "Uma lente está pronta para viajar até um jardim. A próxima página aproxima o olhar das formas da natureza.",
+          "asset": "/illustrations/p10-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p10-s02",
+          "pathId": "path-10",
+          "index": 1,
+          "title": "Estudos da natureza",
+          "intro": "Plantas e pequenos animais são observados, desenhados e comparados. Coleções podem guardar conhecimento, mas também contam histórias de poder e extração. Esta página privilegia a observação cuidadosa de seres vivos no jardim.",
+          "outro": "Entre folhas e páginas, chega uma mensagem. Outras invenções começam a mudar a velocidade das notícias.",
+          "asset": "/illustrations/p10-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p10-s03",
+          "pathId": "path-10",
+          "index": 2,
+          "title": "Novos meios de comunicação",
+          "intro": "Um cabo conecta estações distantes. No telégrafo, sinais transformam mensagens em impulsos que precisam ser interpretados. Uma novidade técnica muda também ritmos de trabalho e circulação de informações.",
+          "outro": "A notícia segue pela linha. Você acompanha outro espaço onde instrumentos e cuidado se encontram.",
+          "asset": "/illustrations/p10-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p10-s04",
+          "pathId": "path-10",
+          "index": 3,
+          "title": "Descobertas na medicina",
+          "intro": "Nesta sala de cuidados, a limpeza das mãos e o uso de instrumentos fazem parte de práticas em transformação. Conhecimentos médicos foram revistos ao longo do tempo e por muitas pessoas. O centro da cena é o cuidado, sem procedimentos assustadores.",
+          "outro": "A mesa limpa recebe novos instrumentos. O próximo laboratório continuará a testar hipóteses.",
+          "asset": "/illustrations/p10-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p10-s05",
+          "pathId": "path-10",
+          "index": 4,
+          "title": "Laboratórios e invenções",
+          "intro": "Frascos, anotações e protótipos mostram um trabalho feito de tentativas. Nem tudo dá certo de primeira. Você encerra o caminho em um laboratório onde observar e corrigir são partes da criação.",
+          "outro": "Um pequeno motor leva seus olhos até a janela. Além dela, máquinas maiores estão mudando a paisagem.",
+          "asset": "/illustrations/p10-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-11",
+      "index": 10,
+      "title": "A revolução industrial",
+      "era": "Trabalho, máquinas e cidades, séculos XVIII–XIX",
+      "intro": "Máquinas transformam a produção, mas seus efeitos não são iguais para todos. Trabalhadores, transportes e cidades mudam em ritmos distintos. Você acompanha essa paisagem sem esconder o trabalho humano por trás dos mecanismos.",
+      "outro": "As máquinas alteraram o tempo das ruas e as relações de trabalho. Sua próxima parada acompanha transportes, reconstruções e movimentos por direitos no século XX.",
+      "reward": "Paleta das oficinas e novos tons",
+      "palette": [
+        "#9D6A4D",
+        "#607F86",
+        "#A8A16A",
+        "#B98458",
+        "#D7CBB6"
+      ],
+      "stages": [
+        {
+          "id": "p11-s01",
+          "pathId": "path-11",
+          "index": 0,
+          "title": "Máquinas a vapor",
+          "intro": "Um operador verifica válvulas e conexões antes de iniciar a máquina. O vapor move partes que dependem de combustível, água e manutenção. Sua pintura revela tanto o mecanismo quanto quem cuida dele.",
+          "outro": "A correia liga a máquina ao restante da oficina. Você segue esse movimento até um bairro de trabalhadores.",
+          "asset": "/illustrations/p11-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p11-s02",
+          "pathId": "path-11",
+          "index": 1,
+          "title": "Oficinas industriais",
+          "intro": "No canal, cargas chegam enquanto a oficina prepara novas peças. A cena antiga do Colorê retorna com mais detalhes do trabalho e dos materiais. Cada ferramenta conta uma parte desse cotidiano.",
+          "outro": "Uma peça pronta segue para a ferrovia. A próxima página percorre os trilhos e suas novas conexões.",
+          "asset": "/illustrations/p11-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "08-a-oficina-dos-novos-tons"
+        },
+        {
+          "id": "p11-s03",
+          "pathId": "path-11",
+          "index": 2,
+          "title": "Ferrovias",
+          "intro": "A estação reúne viajantes, carregadores e pessoas responsáveis pela manutenção. Os trilhos aproximam lugares e também reorganizam territórios. Observe a rede de trabalho por trás da locomotiva.",
+          "outro": "O trem segue em direção à cidade. Você vira a página para encontrar ruas que mudam com esses novos ritmos.",
+          "asset": "/illustrations/p11-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p11-s04",
+          "pathId": "path-11",
+          "index": 3,
+          "title": "Transformações urbanas",
+          "intro": "Casas, oficinas e vias crescem perto dos novos empregos. Saneamento, moradia e poluição se tornam questões urgentes. Sua página acompanha uma rua onde melhorar a cidade exige escolhas coletivas.",
+          "outro": "Na esquina, um aviso convoca uma reunião. As próximas mudanças também virão de pessoas organizadas.",
+          "asset": "/illustrations/p11-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p11-s05",
+          "pathId": "path-11",
+          "index": 4,
+          "title": "Novas formas de produção",
+          "intro": "Produtos passam por várias etapas e por muitas mãos. A organização do trabalho pode aumentar a produção e trazer novas pressões. Nesta oficina têxtil, procure as pessoas além das máquinas.",
+          "outro": "O tecido pronto sai pela porta e alcança uma cidade em transformação. No próximo caminho, seus moradores vão buscar novos direitos e modos de viver.",
+          "asset": "/illustrations/p11-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-12",
+      "index": 11,
+      "title": "Um mundo em transformação",
+      "era": "Cidades, direitos e reconstruções no século XX",
+      "intro": "O século XX reúne transformações intensas e experiências muito diferentes. Em vez de mostrar violência, seu caderno acompanha mobilidade, solidariedade e reconstrução. Direitos e formas de criar também são parte dessa história.",
+      "outro": "Rádios, ruas e telas conectam novas experiências. A próxima etapa acompanha computadores, satélites e redes que mudaram a circulação de informações.",
+      "reward": "Paleta das ruas e da reconstrução",
+      "palette": [
+        "#8B7A66",
+        "#788E99",
+        "#BC815C",
+        "#8C9362",
+        "#CABAA0"
+      ],
+      "stages": [
+        {
+          "id": "p12-s01",
+          "pathId": "path-12",
+          "index": 0,
+          "title": "A expansão das cidades",
+          "intro": "Novos edifícios crescem perto de bairros antigos. Planejar transporte, água e áreas comuns se torna um desafio. Você observa uma cidade latino-americana onde diferentes tempos convivem.",
+          "outro": "Um bonde cruza a rua e leva sua atenção aos transportes. A próxima pintura segue esses trajetos.",
+          "asset": "/illustrations/p12-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p12-s02",
+          "pathId": "path-12",
+          "index": 1,
+          "title": "Novos meios de transporte",
+          "intro": "Na estação, bicicletas, ônibus e trens disputam espaço com os pedestres. Cada mudança altera distâncias e hábitos. Pinte as rotas de uma cidade que aprende a se movimentar.",
+          "outro": "Os trajetos também podem ser interrompidos. A próxima página mostra pessoas trabalhando para reconstruir.",
+          "asset": "/illustrations/p12-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p12-s03",
+          "pathId": "path-12",
+          "index": 2,
+          "title": "Conflitos e reconstrução",
+          "intro": "Conflitos deixaram perdas profundas que não cabem em uma única imagem. Nesta página, vizinhos recuperam uma biblioteca e cuidam do espaço comum. A reconstrução envolve memória, apoio e tempo.",
+          "outro": "Uma mesa volta a receber livros. Em outra rua, pessoas se reúnem para defender direitos.",
+          "asset": "/illustrations/p12-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p12-s04",
+          "pathId": "path-12",
+          "index": 3,
+          "title": "Movimentos sociais",
+          "intro": "Uma reunião comunitária discute acesso a escola, moradia e trabalho. Direitos foram conquistados por ações de muitas pessoas, com avanços e resistências. Sua pintura reconhece essas presenças diversas.",
+          "outro": "O espaço de reunião também abre lugar para música e criação. A próxima página transforma a rua em encontro cultural.",
+          "asset": "/illustrations/p12-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p12-s05",
+          "pathId": "path-12",
+          "index": 4,
+          "title": "Transformações culturais",
+          "intro": "A música, o cinema e a arte circulam por novos meios e ocupam os espaços públicos. Tradições e experimentações convivem. Nesta praça, cada pessoa traz uma maneira de participar.",
+          "outro": "Um rádio transmite a celebração para longe. Você seguirá os fios e sinais que aproximam novas partes do mundo.",
+          "asset": "/illustrations/p12-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-13",
+      "index": 12,
+      "title": "A era da tecnologia",
+      "era": "Computação, espaço e redes no século XX",
+      "intro": "Computadores e redes foram criados por equipes, instituições e trabalhos muitas vezes pouco lembrados. A tecnologia amplia possibilidades e traz perguntas sobre acesso e escolhas. Seu caderno visita os lugares onde sinais se tornam experiências.",
+      "outro": "A rede se tornou parte do cotidiano de muitas pessoas, mas não de todas. A próxima página retorna às cidades, à diversidade e ao cuidado com o planeta que compartilhamos.",
+      "reward": "Paleta dos sinais e circuitos",
+      "palette": [
+        "#64899B",
+        "#8C7A9D",
+        "#6F9C86",
+        "#CA9E62",
+        "#D4CDB9"
+      ],
+      "stages": [
+        {
+          "id": "p13-s01",
+          "pathId": "path-13",
+          "index": 0,
+          "title": "Computadores",
+          "intro": "Uma sala ocupa o espaço que hoje caberia em objetos muito menores. Programadoras e técnicos organizam cabos, cartões e operações. O computador depende de quem planeja, mantém e questiona seus usos.",
+          "outro": "Uma folha de cálculos segue para uma equipe de pesquisa. Ela participará de um projeto que olha para além da Terra.",
+          "asset": "/illustrations/p13-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p13-s02",
+          "pathId": "path-13",
+          "index": 1,
+          "title": "Exploração espacial",
+          "intro": "Satélites e sondas levam instrumentos para observar outros lugares. Cada missão exige muitos profissionais e decisões. Nesta página, a curiosidade aparece no trabalho de uma equipe em terra.",
+          "outro": "Um satélite se prepara para seguir seu rumo. Seus sinais ajudam a abrir a próxima página da viagem.",
+          "asset": "/illustrations/p13-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p13-s03",
+          "pathId": "path-13",
+          "index": 2,
+          "title": "Telecomunicações",
+          "intro": "Antenas e cabos conectam conversas, imagens e notícias. As redes precisam de manutenção e nem sempre chegam a todos os lugares. Observe quem trabalha para ligar uma comunidade.",
+          "outro": "Os sinais chegam a uma sala de computadores conectados. Uma nova forma de trocar informações está se espalhando.",
+          "asset": "/illustrations/p13-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p13-s04",
+          "pathId": "path-13",
+          "index": 3,
+          "title": "A chegada da internet",
+          "intro": "Em uma biblioteca, computadores conectados ampliam o acesso a materiais e pessoas. A rede cresce com regras, escolhas e desigualdades. Sua página destaca um espaço de uso compartilhado.",
+          "outro": "Uma pessoa fecha a tela e leva uma ideia para sua oficina. A criação digital também vai encontrar o trabalho manual.",
+          "asset": "/illustrations/p13-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p13-s05",
+          "pathId": "path-13",
+          "index": 4,
+          "title": "A revolução digital",
+          "intro": "Uma oficina comunitária reúne desenho, programação e fabricação. Ferramentas digitais podem ajudar a criar, mas exigem aprendizado e acesso. Você encerra este caminho com pessoas que compartilham conhecimentos.",
+          "outro": "A porta da oficina se abre para o bairro. No próximo caminho, novas tecnologias encontram desafios do mundo presente.",
+          "asset": "/illustrations/p13-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        }
+      ]
+    },
+    {
+      "id": "path-14",
+      "index": 13,
+      "title": "O mundo contemporâneo",
+      "era": "Diversidade, ciência e cuidado no presente",
+      "intro": "O presente não é igual em todos os lugares. Cidades e comunidades combinam heranças, escolhas e desafios. Nesta parte da viagem, ciência, diversidade e preservação aparecem como trabalhos de pessoas reais.",
+      "outro": "O mural guarda marcas de muitas épocas e as cores que você escolheu. O último caminho não prevê o futuro: convida a imaginar possibilidades e responsabilidades.",
+      "reward": "Paleta da cidade que compartilhamos",
+      "palette": [
+        "#6C9B83",
+        "#6796B0",
+        "#C58F67",
+        "#A981A5",
+        "#DBCAA3"
+      ],
+      "stages": [
+        {
+          "id": "p14-s01",
+          "pathId": "path-14",
+          "index": 0,
+          "title": "Grandes metrópoles",
+          "intro": "Trens, moradias, parques e trabalhos compõem uma paisagem compartilhada por muita gente. As escolhas sobre a cidade afetam quem pode circular e descansar. Dê cores aos detalhes do espaço cotidiano.",
+          "outro": "Uma praça abre um intervalo entre os edifícios. Ali, muitas formas de viver se encontram.",
+          "asset": "/illustrations/p14-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p14-s02",
+          "pathId": "path-14",
+          "index": 1,
+          "title": "Diversidade cultural",
+          "intro": "Na feira do bairro, alimentos, artes e conversas contam trajetórias diferentes. Conviver não significa apagar essas diferenças. Sua pintura celebra o encontro com atenção às pessoas e sem transformá-las em estereótipos.",
+          "outro": "Uma conversa convida a visitar um centro de pesquisa próximo. A próxima página acompanha perguntas sobre o mundo atual.",
+          "asset": "/illustrations/p14-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p14-s03",
+          "pathId": "path-14",
+          "index": 2,
+          "title": "Ciência moderna",
+          "intro": "Pesquisadores observam amostras e compartilham resultados. Equipamentos ajudam, mas a ciência continua dependendo de pessoas, revisão e colaboração. Nesta sala, o trabalho se conecta à água da cidade.",
+          "outro": "Uma amostra vem do rio que cruza o bairro. Você segue até a margem para participar de outro tipo de cuidado.",
+          "asset": "/illustrations/p14-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p14-s04",
+          "pathId": "path-14",
+          "index": 3,
+          "title": "Preservação ambiental",
+          "intro": "Na margem do rio, a comunidade planta espécies do lugar e recolhe resíduos. Preservar exige ações contínuas e decisões mais amplas que um único dia. Sua página guarda um começo possível.",
+          "outro": "O caminho recuperado leva à praça. Uma parede vazia espera pelas lembranças de toda a viagem.",
+          "asset": "/illustrations/p14-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p14-s05",
+          "pathId": "path-14",
+          "index": 4,
+          "title": "A cidade que construímos",
+          "intro": "Mãos, folhas, barcos e ferramentas aparecem no desenho de um mural. As histórias da viagem encontram o bairro de hoje. Esta nova versão da cena do Colorê também deixa espaço para suas escolhas.",
+          "outro": "Seu caderno continua aberto. As próximas páginas imaginam futuros que ainda dependem de decisões coletivas.",
+          "asset": "/illustrations/p14-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target",
+          "legacyId": "09-a-cidade-que-criamos"
+        }
+      ]
+    },
+    {
+      "id": "path-15",
+      "index": 14,
+      "title": "As cores do amanhã",
+      "era": "Futuros possíveis, sem promessa de previsão",
+      "intro": "O futuro ainda não é uma paisagem pronta. As próximas cenas são possibilidades imaginadas, não previsões. Você pode pensar em cidades, energia e tecnologia a partir das necessidades das pessoas e dos outros seres vivos.",
+      "outro": "Você atravessou tempos e lugares sem encontrar uma única cor certa. O caderno agora guarda suas escolhas. Volte às páginas, crie outras versões e continue imaginando histórias que ainda podem ser compartilhadas.",
+      "reward": "Paleta dos futuros possíveis",
+      "palette": [
+        "#72A58C",
+        "#6E9DB5",
+        "#BAA66A",
+        "#9D8FBE",
+        "#DCCFB8"
+      ],
+      "stages": [
+        {
+          "id": "p15-s01",
+          "pathId": "path-15",
+          "index": 0,
+          "title": "Cidades sustentáveis",
+          "intro": "Uma cidade possível aproxima moradia, transporte público e áreas verdes. Nenhuma solução serve igual para todo lugar. Nesta página, imagine como cuidar de quem vive aqui e de quem ainda virá.",
+          "outro": "As coberturas verdes deixam ver um bairro que produz parte de sua energia. A próxima pintura observa essas escolhas.",
+          "asset": "/illustrations/p15-s01.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p15-s02",
+          "pathId": "path-15",
+          "index": 1,
+          "title": "Novas formas de energia",
+          "intro": "Sol, vento e outras fontes podem compor sistemas diferentes. Produzir energia também envolve materiais, territórios e impactos. Sua pintura mostra uma comunidade discutindo e cuidando de suas instalações.",
+          "outro": "A energia alimenta uma estação de pesquisa. Na próxima página, a curiosidade volta os olhos para o universo.",
+          "asset": "/illustrations/p15-s02.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
+        },
+        {
+          "id": "p15-s03",
+          "pathId": "path-15",
+          "index": 2,
+          "title": "Exploração do universo",
+          "intro": "Uma estação observa sinais e prepara uma sonda. Explorar pode ampliar perguntas sem prometer respostas simples. Nesta possibilidade de futuro, o trabalho em equipe continua no centro da descoberta.",
+          "outro": "O desenho de uma sonda divide espaço com uma mão humana. A próxima página pergunta como a tecnologia pode apoiar a vida cotidiana.",
+          "asset": null,
+          "width": 0,
+          "height": 0,
+          "resolutionStatus": "missing"
+        },
+        {
+          "id": "p15-s04",
+          "pathId": "path-15",
+          "index": 3,
+          "title": "Tecnologia e humanidade",
+          "intro": "Uma oficina projeta recursos de acessibilidade junto às pessoas que os usarão. A tecnologia faz mais sentido quando escuta necessidades reais. Você escolhe as cores de uma criação colaborativa.",
+          "outro": "Uma peça é testada e melhorada com a ajuda de todos. Para a última página, a oficina leva suas ideias ao jardim do bairro.",
+          "asset": null,
+          "width": 0,
+          "height": 0,
+          "resolutionStatus": "missing"
+        },
+        {
+          "id": "p15-s05",
+          "pathId": "path-15",
+          "index": 4,
+          "title": "O futuro que podemos criar",
+          "intro": "No jardim, as lembranças da viagem viram conversa sobre o amanhã. Há espaço para dúvida, cuidado e imaginação. Termine quando desejar: uma página concluída também pode ser o início de outra história.",
+          "outro": "Sua jornada atravessou quinze caminhos. As cores são suas, e o caderno pode ser aberto outra vez. Qual encontro você gostaria de pintar de um jeito novo?",
+          "asset": null,
+          "width": 0,
+          "height": 0,
+          "resolutionStatus": "missing"
+        }
+      ]
+    }
+  ]
+}

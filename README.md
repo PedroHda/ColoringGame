@@ -1,476 +1,244 @@
 <div align="center">
-
-# Colorê — O caminho das cores
-
-**Respire. Pinte. Descubra.**
-
-Uma aventura de pintura pela história humana, das primeiras marcas nas cavernas às cidades que criamos juntos.
-
-**9 cenários · 3 capítulos · 3 dificuldades · Ateliê RGB · Texturas e brilhos**
-
-[Jogar o protótipo](https://colore-jardim-de-cores.pild.chatgpt.site/?v=5#jornada) · [Rodar localmente](#rodar-localmente) · [Ver as fases](#jornada) · [Documentação técnica](#arquitetura)
-
+  <img src="assets/characters/brand.svg" width="92" alt="Logo do Colorê" />
+  <h1>Colorê — O Caminho das Cores</h1>
+  <p>Pinte histórias, descubra épocas e vista suas próprias criações.</p>
+  <p><strong>React · TypeScript · Canvas 2D · React Native · Skia · SQLite</strong></p>
+  <p><a href="https://colore-jardim-de-cores.pild.chatgpt.site/#jornada">Abrir o jogo</a> · <a href="#executar-na-web">Executar na web</a> · <a href="docs/ANDROID.md">Android e APK</a> · <a href="docs/STATUS-V6.md">Estado da entrega</a></p>
 </div>
 
-![As primeiras marcas: caverna, riacho e trilha que conduz à próxima aldeia, na direção de arte do Colorê](dist/history/images/01-primeiras-marcas.png)
+Colorê é um jogo de pintura livre e exploração histórica. Cada ilustração abre uma passagem para a próxima: das primeiras marcas ao redor do fogo às possibilidades de um amanhã sustentável. Você escolhe as cores, arrasta o pincel sobre o papel, cria seu personagem e pinta as roupas que ele usa durante a viagem.
 
-> **Versão atual: 5.0.0 — protótipo web jogável.** A jornada histórica, a pintura por números, o ateliê livre e a exportação de imagens já funcionam. O acesso à versão hospedada segue as permissões do site. Para executar sua própria cópia, use as instruções abaixo.
+A V6 evolui o protótipo existente para React e TypeScript. A pintura principal usa traços contínuos editáveis, com tinta sob os contornos. O código, as nove cenas e os dados da V5 continuam preservados; a [documentação anterior](docs/README-V5.md) explica a experiência por regiões.
 
-## Conteúdo
+> **Estado verificável:** a web funciona com pintura, SQLite, progresso, personagem, roupas e backups. O projeto Android tem renderizador nativo, configuração de APK e bundle verificável. **Ainda não há APK compilado nem teste em aparelho.** O catálogo prevê 15 caminhos e 75 ilustrações; o [manifesto de assets](assets/illustrations/manifest.json) informa exatamente quais imagens estão disponíveis. Os masters gerados têm 1586 × 992, abaixo da referência solicitada de 2048 × 1280; não foram ampliados para simular HD. Consulte o [estado da entrega](docs/STATUS-V6.md) antes de distribuir.
 
-- [Sobre o projeto](#sobre)
-- [Capturas do protótipo](#capturas)
-- [Como jogar](#como-jogar)
-- [Jornada e história](#jornada)
-- [Galeria dos nove cenários](#galeria)
-- [Dificuldades e recompensas](#dificuldades)
-- [Ateliê livre, cores e materiais](#atelie)
-- [Rodar localmente](#rodar-localmente)
-- [Controles e acessibilidade](#controles)
-- [Salvamento e exportação](#salvamento)
-- [Tecnologias e arquitetura](#arquitetura)
-- [Preparar ou alterar fases](#preparar-fases)
-- [Verificações e testes](#verificacoes)
-- [Hospedagem](#hospedagem)
-- [Limitações e próximos passos](#limites)
-- [Solução de problemas](#problemas)
-- [Contribuição, artes e licença](#contribuicao)
+## Veja o que está implementado
 
-<a id="sobre"></a>
+As imagens abaixo são capturas reais da web e uma amostra renderizada pelo motor de pintura. Não representam uma validação em celular Android.
 
-## Sobre o projeto
-
-Colorê é uma experiência de pintura com ritmo tranquilo. Cada cena começa em tons de papel e cinza e ganha cor conforme o jogador preenche suas regiões. As ilustrações mantêm contornos, sombras e textura durante a transformação.
-
-A história acompanha as marcas que as pessoas deixam no mundo: pigmentos na pedra, cerâmica, monumentos, mosaicos, livros, telas, oficinas e espaços de criação coletiva. O personagem recorrente, os rios, as trilhas e as ruas ligam uma época à seguinte.
-
-| Espaço | O que você encontra |
+| Personagem e roupa pintada | Ferramentas e materiais |
 | --- | --- |
-| **Minha jornada** | Pintura por números, fases em sequência, trechos da história e estrelas. |
-| **Ateliê livre** | Todos os cenários disponíveis para experimentar cores, texturas e acabamentos. |
-| **Coleção** | Acesso às cenas iniciadas ou concluídas, com filtros para jornada e ateliê. |
+| ![Personagem usando camiseta pintada no editor](docs/images/personagem-v6.jpg) | ![Traços reais dos doze pincéis e dez materiais](docs/images/ferramentas-v6.png) |
 
-Não é necessário criar conta dentro do jogo. A execução do protótipo não faz chamadas a serviços de IA e não exige chave de API.
+![O vale do Nilo: cenário em preto e branco usado pelo editor de pintura](assets/illustrations/p03-s02.png)
 
-<a id="capturas"></a>
+[Outra ilustração original para pintar: as primeiras marcas](assets/illustrations/p01-s01.png). Não há vídeo ou GIF de demonstração incluído nesta versão.
 
-## Capturas do protótipo
+## Jogar
 
-As imagens abaixo são capturas reais da versão web. Elas mostram a interface responsiva e uma pintura em andamento.
+1. Crie seu viajante: nome, pele, rosto, cabelo, expressão, roupa, calçado e acessórios.
+2. Abra **Minha jornada**, selecione um caminho e leia ou ouça a introdução.
+3. Entre na primeira fase disponível. Arraste o mouse ou o dedo para pintar; escolha a cor livremente.
+4. Ajuste o pincel, experimente sobreposições, apague partes ou use desfazer/refazer.
+5. Ao considerar a obra pronta, confirme a conclusão. Você recebe XP pela primeira conclusão e libera a próxima etapa.
+6. Volte à **Coleção** para continuar a mesma pintura. No **Ateliê**, crie outra versão de um cenário já descoberto ou pinte suas roupas.
 
-<table>
-  <tr>
-    <th>Minha jornada</th>
-    <th>Pintura por números</th>
-  </tr>
-  <tr>
-    <td width="50%"><img src="docs/images/jornada.jpg" alt="Tela da jornada com apresentação, seleção de capítulos e primeiras fases" width="100%"></td>
-    <td width="50%"><img src="docs/images/pintura-em-andamento.jpg" alt="Primeira fase com 18 de 24 áreas pintadas, seis pigmentos, dificuldade e controles" width="100%"></td>
-  </tr>
-</table>
+A conclusão não compara sua pintura a uma referência. Cores inesperadas são bem-vindas. É preciso fazer uma pincelada e confirmar a ação; repetir uma fase não produz XP ilimitado. Ilustrações ainda não instaladas são identificadas e não abrem como fases prontas.
 
-Na segunda captura, a fase está em **75%**: a caverna e parte da paisagem já ganharam cor, enquanto as áreas restantes continuam em cinza.
+## Pintura, ferramentas e cores
 
-<a id="como-jogar"></a>
+A composição tem papel, camada de tinta, contornos em multiplicação e interface separada. A exportação inclui papel, tinta e desenho, sem os controles. O histórico guarda pontos, pressão, configurações e semente de textura de cada operação.
 
-## Como jogar
-
-1. Abra o jogo e selecione **Começar minha jornada**.
-2. Escolha **Fácil**, **Médio** ou **Difícil** na tela da cena.
-3. Selecione um dos seis pigmentos e toque em uma região com o mesmo número.
-4. Continue até preencher todas as áreas. Quando um pigmento termina, o jogo seleciona outro que ainda tem áreas pendentes.
-5. Ao concluir, leia a continuação da história e use **Seguir o caminho** para avançar.
-
-Escolher um pigmento diferente do solicitado exibe uma orientação e mantém o progresso. **Uma dica** destaca uma região disponível; **Desfazer** reverte a última pintura feita desde a abertura da cena.
-
-Para experimentar suas próprias combinações, entre em **Ateliê livre**, escolha uma cena e use o painel de materiais. Para guardar o resultado, selecione **Guardar minha arte** e depois **Salvar PNG**.
-
-<a id="jornada"></a>
-
-## Jornada e história
-
-As nove fases estão distribuídas em três capítulos. Cada conclusão apresenta uma descoberta e uma passagem narrativa para a próxima época.
-
-| Capítulo | Fase | Cenário | Época | Ligação com o próximo caminho |
-| --- | --- | --- | --- | --- |
-| 1 · Primeiras marcas | 1 | As primeiras marcas | Pré-história | A trilha cruza o riacho e revela uma aldeia. |
-| 1 · Primeiras marcas | 2 | A aldeia do rio | Primeiras aldeias | O rio conduz a um vale de monumentos e jardins. |
-| 1 · Primeiras marcas | 3 | O vale do Nilo | Egito antigo | O curso do rio chega ao porto e ao mar. |
-| 2 · Cidades e histórias | 4 | O porto das ideias | Grécia antiga | A estrada do porto segue até uma ponte de pedra. |
-| 2 · Cidades e histórias | 5 | A ponte dos encontros | Roma antiga | A ponte aproxima cidades e leva a uma vila entre colinas. |
-| 2 · Cidades e histórias | 6 | O jardim das histórias | Idade Média | A rua da vila se abre em uma praça de artistas. |
-| 3 · Novos horizontes | 7 | A praça dos artistas | Renascimento | Os ateliês se aproximam de um bairro de oficinas. |
-| 3 · Novos horizontes | 8 | A oficina dos novos tons | Era industrial | A oficina e o canal chegam a um espaço comunitário. |
-| 3 · Novos horizontes | 9 | A cidade que criamos | Nosso tempo | Um mural reúne símbolos e memórias da viagem. |
-
-Essa sequência é um recorte narrativo e visual. Ela não pretende representar toda a história humana ou uma trajetória única seguida por todas as sociedades.
-
-<a id="galeria"></a>
-
-## Galeria dos nove cenários
-
-Estas são as ilustrações de base usadas nas fases. Elas mostram a direção de arte; a pintura do jogador é renderizada sobre essas imagens durante o jogo. Clique em uma imagem para abri-la em tamanho maior.
-
-<table>
-  <tr>
-    <td width="33%"><a href="dist/history/images/01-primeiras-marcas.png"><img src="dist/history/images/01-primeiras-marcas.png" alt="Caverna pré-histórica, pinturas rupestres e riacho" width="100%"></a><br><strong>01 · As primeiras marcas</strong><br>Pré-história</td>
-    <td width="33%"><a href="dist/history/images/02-a-aldeia-do-rio.png"><img src="dist/history/images/02-a-aldeia-do-rio.png" alt="Aldeia ribeirinha com casas, plantações e cerâmicas" width="100%"></a><br><strong>02 · A aldeia do rio</strong><br>Primeiras aldeias</td>
-    <td width="33%"><a href="dist/history/images/03-o-vale-do-nilo.png"><img src="dist/history/images/03-o-vale-do-nilo.png" alt="Vale do Nilo com monumentos egípcios e paisagem ribeirinha" width="100%"></a><br><strong>03 · O vale do Nilo</strong><br>Egito antigo</td>
-  </tr>
-  <tr>
-    <td><a href="dist/history/images/04-o-porto-das-ideias.png"><img src="dist/history/images/04-o-porto-das-ideias.png" alt="Porto grego com arquitetura e cerâmica" width="100%"></a><br><strong>04 · O porto das ideias</strong><br>Grécia antiga</td>
-    <td><a href="dist/history/images/05-a-ponte-dos-encontros.png"><img src="dist/history/images/05-a-ponte-dos-encontros.png" alt="Ponte romana e caminhos entre construções de pedra" width="100%"></a><br><strong>05 · A ponte dos encontros</strong><br>Roma antiga</td>
-    <td><a href="dist/history/images/06-o-jardim-das-historias.png"><img src="dist/history/images/06-o-jardim-das-historias.png" alt="Jardim e ateliê medieval ligados à criação de livros" width="100%"></a><br><strong>06 · O jardim das histórias</strong><br>Idade Média</td>
-  </tr>
-  <tr>
-    <td><a href="dist/history/images/07-a-praca-dos-artistas.png"><img src="dist/history/images/07-a-praca-dos-artistas.png" alt="Praça renascentista com artistas, telas e pigmentos" width="100%"></a><br><strong>07 · A praça dos artistas</strong><br>Renascimento</td>
-    <td><a href="dist/history/images/08-a-oficina-dos-novos-tons.png"><img src="dist/history/images/08-a-oficina-dos-novos-tons.png" alt="Bairro de oficinas e canal na era industrial" width="100%"></a><br><strong>08 · A oficina dos novos tons</strong><br>Era industrial</td>
-    <td><a href="dist/history/images/09-a-cidade-que-criamos.png"><img src="dist/history/images/09-a-cidade-que-criamos.png" alt="Cidade contemporânea com mural e espaço de criação comunitária" width="100%"></a><br><strong>09 · A cidade que criamos</strong><br>Nosso tempo</td>
-  </tr>
-</table>
-
-<a id="dificuldades"></a>
-
-## Dificuldades e recompensas
-
-Cada cenário possui três mapas de pintura diferentes:
-
-| Nível | Áreas por cena | Proposta |
-| --- | --- | --- |
-| **Fácil** | 24 | Menos divisões e áreas maiores. |
-| **Médio** | 40 | Mais regiões para descobrir. |
-| **Difícil** | 70 | Mais divisões e detalhes para preencher. |
-
-São **27 mapas de regiões** ao todo. A jornada usa seis famílias de pigmentos em todos os níveis: ocre, terra vermelha, verde, azul, sombra de terra e areia.
-
-- A primeira fase começa disponível; as seguintes exigem a conclusão dos caminhos anteriores.
-- Concluir uma fase em **qualquer dificuldade** libera a próxima.
-- Cada fase concluída vale **três estrelas**, até **27 estrelas** na jornada inteira.
-- Concluir a mesma fase em outra dificuldade não acumula estrelas extras.
-- Cada combinação de cena, modo e dificuldade guarda sua própria pintura. Trocar de nível não transfere o preenchimento para o outro mapa.
-- O ateliê mantém todas as cenas disponíveis e não concede estrelas nem desbloqueia a jornada.
-
-As estrelas são uma indicação de progresso. Não há loja ou sistema de compra de itens nesta versão.
-
-<a id="atelie"></a>
-
-## Ateliê livre, cores e materiais
-
-O ateliê permite escolher qualquer uma das nove épocas, sem seguir a sequência da história. O jogador preenche ou recolore regiões com sua própria mistura.
-
-### Cores
-
-- Círculo de cores com matiz e saturação.
-- Controle de luminosidade, incluindo branco e preto.
-- Entrada hexadecimal no formato `#RRGGBB`.
-- Canais **R**, **G** e **B**, de `0` a `255`.
-- Histórico das últimas oito cores usadas.
-
-O seletor trabalha internamente em HSV e converte o resultado para RGB/HEX. Não há controle de transparência alfa nesta versão.
-
-### Texturas e brilhos
-
-| Texturas | Acabamentos |
+| Ferramenta | Comportamento |
 | --- | --- |
-| Lisa | Fosco |
-| Papel | Acetinado |
-| Aquarela | Glitter |
-| Tecido | Metálico |
+| Pincel redondo | Ponta circular com cobertura e suavidade controláveis |
+| Lápis de cor | Pigmento granulado e traço fino |
+| Pincel fino | Ponta estreita orientada pelo gesto |
+| Pincel grosso | Cobertura larga com marcas de cerdas |
+| Aquarela | Transparência e acúmulo de pigmento |
+| Giz de cera | Grãos e irregularidade de cobertura |
+| Marcador | Traço relativamente uniforme |
+| Aerógrafo | Névoa suave e difusa |
+| Carvão | Grãos escuros e bordas fragmentadas |
+| Caneta artística | Linha definida e contínua |
+| Pincel de textura | Distribuição de marcas sobre a superfície |
+| Borracha | Remove apenas a tinta, preservando os contornos |
 
-Qualquer textura pode ser combinada com qualquer acabamento, formando **16 combinações por cor**. A escolha fica salva por região e aparece na exportação em PNG. Os brilhos são efeitos visuais estáticos.
+Os dez materiais são tinta comum, aquarela, óleo, acrílica, pastel, grafite, metálico, glitter, perolizado e pigmento natural. Eles alteram cobertura, grão, relevo ou partículas; podem ser combinados com os pincéis. São aproximações gráficas 2D, sem simulação física de fluidos ou iluminação tridimensional.
 
-Use **Preencher** para aplicar a mistura e **Borracha** para retirar a pintura de uma área. **Desfazer** restaura a ação anterior, incluindo recolorações e apagamentos, enquanto a cena permanecer aberta.
+Controles disponíveis: tamanho, opacidade, intensidade, suavidade, textura, mistura e alfa. O seletor inclui círculo HSV, luminosidade, saturação, RGB, HEX, cores recentes, conta-gotas e paletas favoritas. Paletas históricas são bônus opcionais: o círculo completo permanece disponível desde o início.
 
-**“Livre” significa liberdade de cores e materiais sobre regiões predefinidas.** O protótipo ainda não oferece pincel de traço livre.
+Na web, `Ctrl+Z` desfaz; `Ctrl+Shift+Z` ou `Ctrl+Y` refazem. Use a mão para mover a tela ou dois dedos para pinça e deslocamento. O modo de foco oculta o painel. No Android, um dedo pinta e dois dedos navegam; há adaptação para retrato e paisagem. Pressão é utilizada quando fornecida pelo dispositivo.
 
-<a id="rodar-localmente"></a>
+## Uma história em 15 caminhos
 
-## Rodar localmente
+Cada caminho contém cinco fases exclusivas, apresentação, introdução e conclusão por fase, recompensa, paleta e ligação com o próximo capítulo. A jornada percorre contextos específicos de várias regiões; há sobreposições cronológicas. Os últimos cenários são possibilidades imaginadas, não previsões.
 
-### Requisitos
+| Caminho | Tema |
+| --- | --- |
+| 01 | As Primeiras Marcas |
+| 02 | O Nascimento das Aldeias |
+| 03 | As Grandes Civilizações Fluviais |
+| 04 | O Surgimento dos Conhecimentos |
+| 05 | Cidades e Impérios Antigos |
+| 06 | Povos e Civilizações do Mundo |
+| 07 | A Era Medieval |
+| 08 | Navegação e Transformações |
+| 09 | O Renascimento das Artes |
+| 10 | Ciência e Invenções |
+| 11 | A Revolução Industrial |
+| 12 | Um Mundo em Transformação |
+| 13 | A Era da Tecnologia |
+| 14 | O Mundo Contemporâneo |
+| 15 | As Cores do Amanhã |
 
-- **Node.js 22 ou superior**, com npm. Ambiente validado com Node.js `22.19.0` e npm `11.12.1`.
-- Git, caso você use o comando de clonagem. Também é possível baixar e extrair o repositório como ZIP.
-- Navegador com JavaScript, módulos ES, Canvas 2D e armazenamento local habilitados.
+Os dados editoriais completos estão em [`content-source.mjs`](packages/game-content/content-source.mjs). As nove cenas anteriores inspiram composições e mantêm vínculos de migração. A abordagem evita apresentar a humanidade como história exclusiva de uma região; colonização, conflitos e desigualdade recebem contexto nos textos.
 
-### Iniciar
+## XP, personagem e guarda-roupa
 
-```powershell
+A curva possui 50 níveis, definidos por `round(20 × (nível − 1)^1.65)`. Uma fase inédita concede 120 XP; concluir as cinco fases de um caminho acrescenta 220 XP. A primeira descoberta de uma ferramenta ou material disponível concede 15 XP. Cada conquista concede 40 XP uma única vez.
+
+O nível libera ferramentas e materiais. Pincel redondo, borracha, pigmentos naturais e escolha livre de cores estão disponíveis no início. As conquistas recompensam primeiras pinturas, caminhos completos, descoberta da aquarela, paletas favoritas e exploração dos materiais.
+
+O avatar é modular e persistente. Há **nove peças pintáveis**: camiseta, chapéu de artista e bolsa de viagem iniciais; chapéu de fibras, capa, chapéu de navegação, avental, bolsa de ferramentas e casaco de reuso liberados por caminhos. Cada peça abre no mesmo editor, conserva traços editáveis e pode ser equipada no encaixe correspondente. As inspirações históricas são interpretações lúdicas, descritas em [Guarda-roupa](docs/GUARDA-ROUPA.md).
+
+![Seis peças históricas pintáveis: prévia dos SVG originais do projeto, sem representar uma captura do aplicativo](docs/images/pecas-v6.png)
+
+## Executar na web
+
+Requisitos: Node.js compatível com Vite 7 (Node 22.19 foi utilizado), npm e navegador moderno com Canvas 2D, WebAssembly e armazenamento local habilitados. Não são necessárias chaves de API ou variáveis de ambiente para jogar.
+
+```bash
 git clone https://github.com/PedroHda/ColoringGame.git
 cd ColoringGame
+# Se a V6 estiver em revisão, use a branch da implementação:
+git checkout codex/colore-free-paint
+npm ci
 npm start
 ```
 
-Abra **http://127.0.0.1:4173**. Para encerrar o servidor, pressione `Ctrl+C` no terminal.
+Abra o endereço que o Vite imprimir, normalmente `http://127.0.0.1:4173/`. A porta pode mudar se já estiver ocupada.
 
-O projeto não possui dependências JavaScript externas: **não é necessário executar `npm install`**. Também não é necessário compilar a aplicação. Os arquivos de `dist/` são servidos diretamente.
-
-Não abra `dist/index.html` pelo explorador de arquivos usando `file://`: os módulos e o carregamento dos mapas precisam de um servidor HTTP.
-
-### Usar outra porta no PowerShell
-
-Se a porta padrão estiver ocupada:
-
-```powershell
-$env:PORT = "4174"
-npm start
+```bash
+npm run check       # TypeScript e sintaxe dos módulos preservados
+npm test            # Regras, renderização, SQLite e regressões V5
+npm run assets:check
+npm run build       # Produz build/, ilustrações otimizadas e versão antiga
+npm run preview     # Serve o build; confira a porta impressa
 ```
 
-Nesse caso, acesse **http://127.0.0.1:4174**. A variável vale para o terminal atual. O servidor escuta em `127.0.0.1`, portanto esse comando permite acesso apenas pela própria máquina.
+`npm run legacy` executa diretamente o protótipo V5 preservado em `dist/`. No build V6, ele fica em `/legacy/`. O argumento de URL `?v=5` sozinho não seleciona a versão antiga.
 
-### Comandos disponíveis
+Para hospedar, publique o conteúdo de `build/` com MIME correto para JavaScript, PNG e WebAssembly. Use HTTPS, necessário para Service Worker e armazenamento seguro. O build é estático: não precisa de servidor Node em produção. `dist/` neste repositório contém a versão anterior e **não é a saída do Vite V6**. O checkout de publicação do Sites é separado do repositório principal.
 
-| Comando | Função |
-| --- | --- |
-| `npm start` | Inicia o servidor local na porta 4173 ou na definida em `PORT`. |
-| `npm run check` | Verifica a sintaxe dos módulos principais e do servidor. |
-| `npm test` | Executa os testes de `tests/*.test.mjs` com o runner nativo do Node.js. |
+## Android e APK
 
-Python é opcional: só é usado ao recalcular os mapas das fases.
+O aplicativo utiliza React Native e Skia. A superfície de pintura é nativa, com código de desenho específico para Android e regras/modelos compartilhados com a web. Não depende de WebView.
 
-<a id="controles"></a>
+```bash
+npm ci --prefix apps/mobile
+npm run assets --prefix apps/mobile
+npm run check --prefix apps/mobile
+npm test --prefix apps/mobile
+npm run bundle:android --prefix apps/mobile
+```
 
-## Controles e acessibilidade
+Para desenvolver, execute `npm start --prefix apps/mobile` com um cliente de desenvolvimento instalado. `bundle:android` gera o bundle Hermes e confere assets; **não produz um APK**.
 
-| Ação | Mouse ou toque | Teclado |
-| --- | --- | --- |
-| Selecionar pigmento na jornada | Escolher uma cor na paleta | Teclas `1` a `6` com a cena aberta. |
-| Pintar uma região | Clicar ou tocar na área ou no número | `Tab` até a área, depois `Enter` ou `Espaço`. |
-| Navegar entre controles | Clicar ou tocar no controle | `Tab` e `Shift+Tab`. |
-| Ajustar o tom no ateliê | Arrastar no círculo de cores | Com o círculo em foco, `←` e `→`. |
-| Ajustar a saturação | Mover em direção ao centro ou à borda | Com o círculo em foco, `↑` e `↓`; `Home` e `End` para os extremos. |
-| Desfazer, pedir dica ou ampliar | Usar o botão correspondente | Focar o botão e ativá-lo. |
+O identificador é `com.pedrohda.colore`. Ícones, splash, permissões e orientação estão em [`app.json`](apps/mobile/app.json). O perfil `preview` de [`eas.json`](apps/mobile/eas.json) gera especificamente `.apk`; `production` gera `.aab`.
 
-A interface inclui rótulos para as áreas, foco visível, mensagens de status e indicação do pigmento por número. É possível ocultar os números na jornada, ampliar a cena e solicitar tela cheia quando o navegador permitir.
+```bash
+cd apps/mobile
+npm install --global eas-cli
+eas login
+eas init
+npm run build:apk
+```
 
-Em telas pequenas, a navegação se adapta e o painel do ateliê fica abaixo da pintura. Usar o celular na horizontal oferece mais espaço para os detalhes. Esses recursos não representam uma certificação de acessibilidade; a experiência ainda pode ser aprimorada com testes de uso e tecnologias assistivas.
+O proprietário precisa vincular o projeto à sua conta Expo e configurar assinatura; nenhuma conta, credencial ou chave foi inventada ou incluída no repositório. Para build local, instale JDK e Android SDK, execute `npm run prebuild:android` e depois o Gradle. Os comandos, instalação via `adb`, assinatura, adaptação Windows e roteiro em aparelho estão em [Android e distribuição](docs/ANDROID.md).
 
-<a id="salvamento"></a>
+Este ambiente não possui Java/JDK, Android SDK ou aparelho/emulador configurado. Por isso, não há APK anexado nem comprovação de execução nativa. A configuração e os comandos foram deixados reproduzíveis, conforme a exceção prevista na especificação.
 
-## Salvamento e exportação
-
-### Progresso local
-
-O jogo salva automaticamente em `localStorage`, na chave **`colore-history-v1`**. O estado inclui áreas pintadas, cores, texturas, acabamentos, preferências e cores recentes.
-
-As pinturas são separadas por cena e dificuldade em duas coleções:
-
-| Campo | Conteúdo |
-| --- | --- |
-| `numbered` | Identificadores das regiões preenchidas na jornada. |
-| `free` | Cor, textura e acabamento aplicados às regiões no ateliê. |
-
-Uma chave de pintura tem o formato `01-primeiras-marcas:easy`. Os registros passam por validação ao carregar; dados incompatíveis ou inválidos são descartados.
-
-- **Salvo neste dispositivo** indica que o armazenamento foi gravado.
-- **Apenas nesta sessão** indica que não foi possível persistir os dados.
-- O histórico de **Desfazer** não é persistido: ele recomeça ao abrir ou trocar a cena/dificuldade.
-- Navegadores, perfis, endereços e portas diferentes possuem armazenamentos separados.
-- Limpar os dados do site remove o progresso. Não há conta, nuvem ou sincronização entre dispositivos.
-
-As chaves anteriores, `colore-studio-v1` e `colore-freepaint-v1`, são preservadas. O progresso do protótipo vetorial antigo não é convertido para as novas fases históricas.
-
-### Guardar uma pintura
-
-Selecione **Guardar minha arte** para abrir a prévia e depois **Salvar PNG**. O arquivo tem **1600 × 1000 pixels**, com a pintura atual, os materiais aplicados, o título e a assinatura do Colorê. Áreas ainda não pintadas permanecem em cinza; os números de interação não fazem parte da imagem exportada.
-
-A exportação funciona tanto para trabalhos parciais quanto para cenas concluídas. Ela guarda uma imagem do resultado, sem incluir o estado editável do jogo. Ainda não há importação ou exportação de backup do progresso.
-
-<a id="arquitetura"></a>
-
-## Tecnologias e arquitetura
-
-| Tecnologia | Uso no projeto |
-| --- | --- |
-| **HTML5** | Estrutura da interface, controles, diálogos e navegação. |
-| **CSS3** | Identidade visual, texturas de interface e layouts responsivos. |
-| **JavaScript com módulos ES** | Regras, navegação, interação e persistência. |
-| **Canvas 2D** | Renderização das cenas, aplicação de cores e materiais, exportação PNG. |
-| **SVG** | Camada interativa dos números e prévias de materiais. |
-| **JSON** | Mapas das regiões pintáveis nas três dificuldades. |
-| **Node.js** | Servidor HTTP de desenvolvimento e testes automatizados. |
-| **Python + Pillow + NumPy** | Preparação offline dos mapas de regiões a partir das ilustrações. |
-
-O aplicativo é estático: não há backend de contas, banco de dados remoto ou framework de interface. As fontes Fraunces e Nunito são carregadas do Google Fonts; Georgia e Arial são alternativas locais.
-
-### Estrutura do repositório
+## Arquitetura
 
 ```text
-ColoringGame/
-├── dist/
-│   ├── index.html                  # Entrada da experiência histórica
-│   ├── favicon.svg
-│   ├── paint-effects.js            # Conversões de cor e prévias dos materiais
-│   ├── history/
-│   │   ├── app.js                  # Interface, navegação, regras e diálogos
-│   │   ├── painter.js              # Canvas, seleção de áreas e exportação
-│   │   ├── state.js                # Persistência, progresso e leitura dos mapas
-│   │   ├── scenes.js               # Fases, narrativa, capítulos e pigmentos
-│   │   ├── style.css               # Visual e responsividade
-│   │   ├── images/                 # Nove ilustrações PNG
-│   │   └── regions/                # Nove JSON, cada um com três mapas
-│   └── ...                        # Módulos e estilos do protótipo vetorial anterior
-├── docs/
-│   └── images/                     # Capturas reais utilizadas neste README
-├── scripts/
-│   └── build-history-regions.py     # Gerador dos mapas de pintura
-├── tests/
-│   ├── history.test.mjs             # Mapas, estado e progressão histórica
-│   ├── difficulty.test.mjs          # Dificuldades do protótipo vetorial
-│   ├── free-paint.test.mjs          # Cores, materiais e dados persistidos
-│   └── progression.test.mjs         # Progressão do protótipo vetorial
-├── .gitignore
-├── package.json
-├── README.md
-└── server.mjs
+apps/
+  web/                 React, editor Canvas, UI e worker SQLite/WASM
+  mobile/              React Native, Skia, SQLite nativo, exportação e builds
+packages/
+  core/                XP, conquistas, migração V5, cores e guarda-roupa
+  drawing-engine/      Modelo compartilhado e renderizador Canvas incremental
+  database/            Esquema versionado e repositório SQLite da web
+  game-content/        Narrativa, catálogo e contratos de caminhos/fases
+  shared-types/        Obras editáveis e contrato de backup
+assets/
+  illustrations/       Masters, manifesto, prompts e inspeções
+  clothing/            Nove SVG originais pintáveis
+  characters/          Marca e recursos visuais
+apps/mobile/assets/    Ícones, áudio original e cópias derivadas das ilustrações
+scripts/               Validação, otimização e acabamento do build web
+tests/                 Regressões do protótipo preservado e do pipeline
+docs/                  Auditoria, dados, assets, Android e capturas reais
+dist/                  Código e assets originais da V5 preservados
+build/                 Saída V6 gerada e ignorada pelo Git
 ```
 
-### Como uma região recebe cor
+O modelo de documento é independente do renderizador. Web usa Canvas 2D; Android adapta as operações a Skia e reaproveita comandos de traços finalizados. As regras de XP, cores, catálogo, inventário e serialização são comuns. Os bancos possuem adaptadores e migrações próprios, com backup interoperável.
 
-1. `scenes.js` informa a imagem e o JSON da fase selecionada.
-2. `painter.js` carrega esses arquivos e `state.js` descompacta o mapa da dificuldade.
-3. O toque ou clique é convertido em uma posição na máscara de regiões.
-4. Na jornada, o jogo verifica se o pigmento selecionado corresponde ao número da área.
-5. O Canvas revela a ilustração original ou aplica a mistura do ateliê, preservando traços e luminosidade.
-6. O estado é salvo e os indicadores de progresso são atualizados.
+Tecnologias principais: React 19.2, TypeScript 5.9, Vite 7, SQLite WASM 3.50.4; Expo SDK 55, React Native 0.83, Skia 2.4, Gesture Handler e Reanimated. As versões exatas ficam nos dois arquivos de lock. `@napi-rs/canvas` é usado no computador para testes e otimização; não é o renderizador do aplicativo Android.
 
-As máscaras têm **336 × 189 posições**, com regiões compactadas em RLE — pares de identificador e quantidade de posições consecutivas. As imagens são renderizadas em resolução maior. A posição de cada número é calculada no interior da sua região.
+## SQLite, salvamento e backup
 
-As regiões são agrupadas por cor e proximidade espacial; não são recortes manuais de cada objeto. Uma área pode reunir partes de objetos próximos. Na jornada, trechos neutros das ilustrações recebem pigmentos suaves para manter a transformação visual.
+Na web, um worker é o único proprietário do SQLite. Usa OPFS SAH Pool quando disponível; o fallback mantém um banco SQLite real serializado em IndexedDB e só confirma a gravação após o término da transação. A abertura simultânea em outra aba apresenta uma mensagem de conflito quando o armazenamento está bloqueado. Não há cadastro obrigatório ou sincronização em nuvem.
 
-### Rotas da interface
+As tabelas relacionam perfil, aparência, caminhos, fases, progresso, inventário, ferramentas, materiais, conquistas, XP, paletas, preferências, roupas, equipamento, obras, camadas, traços, migrações e cópias antigas. `drawings → layers → strokes` utiliza chaves estrangeiras e cascatas. O esquema web está na versão 2; o adaptador nativo, na versão 3. Esquemas futuros são recusados antes de alterar dados.
 
-| Fragmento da URL | Tela |
-| --- | --- |
-| `#jornada` | Apresentação, capítulos e fases. |
-| `#livre` | Galeria do ateliê. |
-| `#colecao` | Trabalhos iniciados ou concluídos. |
-| `#colorir` | Cena atual, conforme o estado salvo no navegador. |
+Ao terminar uma pincelada, o jogo salva operações editáveis. Não grava uma imagem completa em base64 por gesto. Traços já persistidos são reaproveitados; miniaturas são derivadas, geradas ao sair do editor ou sob demanda após restaurar um backup. Uma prévia assíncrona não sobrescreve pinceladas mais recentes.
 
-As rotas usam fragmentos e não exigem reescrita de URLs no servidor. `#colorir` não identifica sozinho uma fase compartilhável; a cena e o modo vêm do estado local.
+**“Salvo” significa que a gravação terminou.** Um gesto em andamento ou ainda indicado como “Salvando…” pode ser perdido em um encerramento forçado. O SQLite preserva a última transação concluída. Limpar os dados do navegador, desinstalar o aplicativo ou políticas do sistema podem remover o armazenamento local: mantenha backups das obras importantes.
 
-<a id="preparar-fases"></a>
+Em Ajustes, exporte um JSON com `format: "colore-backup"`, `version: 1`. Web e Android compartilham o formato: perfil, obras, pontos/pressão/sementes, histórico e cópias `legacy`. A restauração valida os dados e é transacional; o estado anterior é preservado em backup antes da substituição. PNG é uma imagem final para compartilhar, não um substituto do backup editável.
 
-## Preparar ou alterar fases
+A migração V5 copia os registros `colore-*`, reconhece conclusões compatíveis e usa marcadores por fase para retomar importações parciais sem repetir XP. Pinturas antigas por regiões são preservadas e acessíveis na versão anterior; não são falsamente convertidas em pinceladas. Android recebe esses dados por backup da web, pois não acessa o `localStorage` do navegador. Veja [auditoria](docs/AUDITORIA-V6.md) e [validação dos dados](docs/VALIDACAO-DADOS-V6.md).
 
-Para mudar textos, títulos, pigmentos e ligações narrativas, edite `dist/history/scenes.js`. Para ajustar o visual da interface, use `dist/history/style.css`.
+## Offline, desempenho e áudio
 
-### Recalcular regiões das imagens existentes
+Na web, a interface é armazenada pelo Service Worker após a primeira carga bem-sucedida em HTTPS ou localhost. Ilustrações entram no cache ao serem abertas; Ajustes permite baixar as disponíveis. Para garantir uma viagem completa offline, faça esse download antes de desconectar. A instalação PWA depende do navegador. No Android, os assets validados acompanham o pacote.
 
-Os mapas prontos já estão no repositório. Execute o gerador apenas quando precisar refazê-los, por exemplo após alterar uma ilustração.
+A distribuição usa PNGs comprimidos sem perdas e miniaturas de 320 pixels para mapas e listas. A igualdade de pixels com os masters é verificada por hash RGBA. O editor carrega a resolução completa sob demanda. A interface evita atualizar React a cada movimento do cursor; o motor acrescenta marcas durante o gesto e preserva operações reproduzíveis. O benchmark automatizado de 1.500 movimentos é de CPU desktop, não de Android; desempenho e bateria em celulares modestos ainda precisam de medição.
 
-Com Python 3 e pip disponíveis, na raiz do projeto:
+Há volumes separados de música, efeitos e narração. Quatro ambiências harmônicas originais acompanham os períodos da jornada; efeitos curtos sinalizam ações e conclusões. Na web, são sintetizados via Web Audio; no Android, WAVs originais locais são reproduzidos com Expo Audio. A música começa desligada e pausa em segundo plano. O gerador está em `apps/mobile/scripts/generate-audio.mjs`.
 
-```powershell
-python -m pip install Pillow numpy
-python scripts/build-history-regions.py
-npm test
+A narração usa a síntese de voz do dispositivo, com texto sempre disponível. Vozes offline dependem do sistema e dos pacotes instalados. Não há chamada de IA ou serviço pago durante o jogo. Opções táteis respeitam a preferência do usuário e a disponibilidade do dispositivo.
+
+## Produzir e acrescentar conteúdo
+
+O [pipeline de ilustrações](docs/ASSETS.md) descreve cada verificação. Edite a composição específica em `content-source.mjs`, produza a arte e salve como `assets/illustrations/pNN-sNN.png`. Execute:
+
+```bash
+npm run assets:sync
+npm run assets:check
+# Exigência completa de quantidade e resolução:
+node scripts/validate-assets.mjs --complete
+npm run assets --prefix apps/mobile
 ```
 
-O script lê os PNG de `dist/history/images/`, calcula os três níveis e **regrava os JSON correspondentes** em `dist/history/regions/`. As ilustrações originais não são modificadas. As versões das dependências Python ainda não estão fixadas em um arquivo de requisitos.
+A validação verifica presença, dimensões reais, identidade por hash, branco, cor e transparência. Exceções visuais precisam de revisão individual registrada. Um arquivo ausente permanece `asset: null`. `--complete` falha enquanto a quantidade ou a resolução mínima não atenderem ao contrato; falhas não são ocultadas pelo build jogável.
 
-Ao alterar máscaras ou identificadores, revise a compatibilidade dos dados salvos: o progresso armazena IDs das regiões, que podem passar a representar outras áreas após uma nova segmentação.
+O gerador de imagens disponível entregou arquivos 1586 × 992. Os originais foram mantidos. Para concluir o requisito HD, substitua por masters de ao menos 2048 × 1280 produzidos na resolução adequada e valide novamente. O jogo não gera imagens em tempo de execução. Veja [distribuição sem perdas](docs/DISTRIBUICAO-ILUSTRACOES.md).
 
-### Adicionar novas épocas
+Para ampliar o jogo:
 
-A estrutura atual foi preparada para nove cenas e três capítulos. Incluir uma fase exige atualizar as imagens, os mapas e a narrativa, além de revisar `state.js`, os limites e textos em `app.js` e os testes. Apenas adicionar um PNG não cria uma fase jogável completa.
+- **Caminhos/fases:** altere a fonte editorial, mantenha IDs estáveis e regenere catálogo/manifesto; reveja pré-requisitos, migração e textos de continuidade.
+- **Pincéis/materiais:** acrescente o tipo e configuração no modelo, implemente comportamento real nos dois renderizadores, configure desbloqueio em `core` e verifique pixels, histórico e exportação.
+- **Roupas:** crie SVG 512 × 512, registre item/encaixe/caminho em `packages/core/wardrobe.ts` e o `require()` em `NativePainting.tsx`; teste pintura, equipamento e backup.
+- **Avatar:** edite os componentes `Avatar.tsx` de cada plataforma e os valores permitidos por `sanitizePlayer`; preserve compatibilidade com perfis salvos.
+- **Recompensas/conquistas:** mantenha identificadores únicos e critérios objetivos no `core`; conceda XP uma única vez e cubra o roundtrip no banco.
 
-<a id="verificacoes"></a>
+## Qualidade e compatibilidade
 
-## Verificações e testes
+Os testes automatizados cobrem regressões V5, serialização e interpolação, grãos determinísticos, diferença real entre ferramentas/materiais, pressão, mistura, borracha, PNG com contornos, desfazer/refazer, zoom, 75 etapas, XP sem repetição, migrações, transações, chaves estrangeiras, backup e reabertura de SQLite. A suíte nativa testa o contrato compartilhado e SQL das migrações em Node; isso não substitui executar os drivers nativos em aparelho.
 
-Execute na raiz:
+A web foi exercitada no navegador com mouse: criação de perfil, pintura, salvamento, recarga, conclusão, roupa equipada e reabertura offline com o servidor desligado. Os registros de validação e as lacunas estão em [STATUS-V6.md](docs/STATUS-V6.md). Não se declara certificação de acessibilidade, compatibilidade universal ou taxa de quadros garantida.
 
-```powershell
-npm run check
-npm test
-```
+Pendências de distribuição: masters HD, APK assinado, testes em Android de capacidades diferentes, pressão/caneta e gestos em hardware, memória/bateria, interrupções de áudio e auditoria completa de acessibilidade. Não há multiplayer, conta online ou sincronização automática entre aparelhos.
 
-A suíte usa `node:test` e `node:assert/strict`, sem bibliotecas extras. Os testes verificam:
+## Contribuir, créditos e licença
 
-- Sequência de desbloqueio e estrelas sem duplicação.
-- Separação de pinturas por cena, modo e dificuldade.
-- Validação de dados persistidos e rejeição de registros malformados.
-- Cobertura de todos os pixels dos 27 mapas e conectividade de cada região.
-- Quantidade de áreas por nível e posicionamento dos números dentro delas.
-- Rejeição de mapas compactados incompletos ou que ultrapassem os limites da máscara.
-- Conversões de cores, normalização de materiais e comportamentos do protótipo vetorial preservado.
+Antes de alterar dados persistentes, leia a auditoria e a documentação de migrações. Preserve IDs e obras existentes; mudanças de esquema exigem migração transacional e teste de rollback. Registre limitações reais. Para contribuir, descreva o problema e a solução, inclua imagens reais quando a interface mudar e execute os checks da plataforma afetada. Não versione credenciais, keystores, dados pessoais, `node_modules` ou outputs gerados.
 
-A verificação de sintaxe e os testes não substituem a revisão visual no navegador. Para alterações de interface ou pintura, confira também toque/clique, navegação por teclado, troca de dificuldade, recarga da página e exportação PNG.
+Projeto de PedroHda e colaboradores. Direção artística e narrativa desenvolvidas a partir das referências do projeto; novas ilustrações produzidas com ferramenta de geração de imagens e revisadas individualmente. Roupas SVG e áudio procedural são originais do projeto. As dependências mantêm suas próprias licenças.
 
-<a id="hospedagem"></a>
+**O proprietário ainda não definiu uma licença de distribuição para o projeto.** A presença do código no GitHub não concede por si só permissão irrestrita de uso ou redistribuição. Nenhuma licença foi escolhida em nome do proprietário.
 
-## Hospedagem
-
-O conteúdo que precisa ser servido está em **`dist/`**. A publicação deve manter os caminhos relativos entre `index.html`, os módulos, as imagens e os mapas JSON. Não há etapa de build ou script `npm run build`.
-
-O `server.mjs` é um servidor de desenvolvimento, limitado a loopback, com respostas sem cache. Na hospedagem estática, o próprio serviço entrega os arquivos de `dist/`; não é necessário executar esse servidor.
-
-O jogo não requer serviços pagos ou APIs de IA durante a execução. Hospedagem e distribuição são serviços separados do código. As artes e os mapas estão no projeto; a única dependência externa de apresentação são as fontes opcionais. Não há service worker ou instalação PWA para garantir funcionamento offline.
-
-<a id="limites"></a>
-
-## Limitações e próximos passos
-
-### Implementado
-
-- [x] Nove cenários históricos com continuidade narrativa.
-- [x] Três capítulos e desbloqueio sequencial.
-- [x] Pintura por números em três dificuldades.
-- [x] Ateliê com círculo de cores, HEX/RGB e cores recentes.
-- [x] Texturas, brilhos, borracha e desfazer.
-- [x] Coleção, progresso local e exportação em PNG.
-- [x] Interface responsiva e controles de teclado.
-
-### Possíveis próximas etapas
-
-- [ ] Aplicativo móvel em Flutter, com interface e renderização próprias.
-- [ ] Pincel de traço livre e ferramentas com comportamentos diferentes.
-- [ ] Desbloqueio progressivo de instrumentos de pintura.
-- [ ] Avatar personalizável e roupas pintáveis.
-- [ ] Máscaras revisadas por objeto e aprimoramento das áreas de toque.
-- [ ] Backup/importação de pinturas e sincronização opcional.
-- [ ] Otimização das imagens e do desempenho em celulares.
-- [ ] Ampliação da jornada com outras regiões, povos e perspectivas.
-
-O visual atual tem profundidade de ilustração **2D**. O personagem faz parte das cenas; não há movimentação livre, mundo 3D, economia, compras ou multiplayer. A paleta indica pigmentos de referência: na jornada, a região recupera detalhes da arte em vez de receber uma cor chapada.
-
-O repositório contém uma aplicação web, sem projeto Flutter, APK ou pacote para iOS. Uma versão Flutter poderá reaproveitar ilustrações, narrativa e dados das regiões, mas precisará adaptar renderização, interação e armazenamento.
-
-<a id="problemas"></a>
-
-## Solução de problemas
-
-| Situação | O que conferir |
-| --- | --- |
-| `node` ou `npm` não é reconhecido | Verifique a instalação do Node.js e abra um novo terminal. |
-| A porta 4173 está ocupada | Use outra porta com a variável `PORT`, conforme o exemplo de execução local. |
-| A página não carrega ao abrir o HTML | Inicie com `npm start` e use o endereço HTTP informado no terminal. |
-| “Esta cena não carregou agora” | Use **Tentar novamente** e confira se a imagem PNG e o JSON correspondente estão nos caminhos esperados. |
-| Um toque não pinta na jornada | Selecione o pigmento do número indicado ou use **Uma dica**. |
-| A próxima fase está bloqueada | Termine todas as áreas da fase anterior em qualquer dificuldade. |
-| A pintura parece ter desaparecido | Confira modo, dificuldade, navegador, perfil e endereço, incluindo a porta. Cada combinação mantém dados separados. |
-| Aparece “Apenas nesta sessão” | O navegador não conseguiu gravar no armazenamento local. Exporte a arte antes de fechar a página. |
-| O desenho está pequeno no celular | Use **Ampliar cena**, gire o aparelho ou solicite tela cheia, quando disponível. |
-| O PNG não é salvo imediatamente | Aguarde a prévia e use **Salvar PNG**; no celular, a imagem também pode ser mantida pressionada para salvar, conforme o navegador. |
-| As fontes aparecem diferentes | O navegador pode estar usando as alternativas locais quando Google Fonts não está disponível. |
-
-<a id="contribuicao"></a>
-
-## Contribuição, artes e licença
-
-Para propor uma mudança, descreva o problema e o comportamento esperado. Em alterações visuais, inclua capturas de antes e depois. Confira os comandos de verificação e mantenha a separação entre o progresso da jornada e o do ateliê.
-
-Os módulos vetoriais da versão anterior continuam no repositório para preservar o trabalho e seus testes. A entrada atual, `dist/index.html`, carrega a experiência em `dist/history/`.
-
-As nove ilustrações foram geradas com IA para esta direção de arte, a partir de referências visuais fornecidas durante a concepção. As capturas em `docs/images/` mostram o protótipo real. Arquivos de áudio pessoais e referências originais não fazem parte dos arquivos do jogo.
-
-**Licença:** este repositório ainda não contém um arquivo `LICENSE` com condições de uso e distribuição definidas.
-
----
-
-<div align="center">
-
-**Colorê — cada cor deixa uma marca.**
-
-</div>
+Documentação técnica: [React](https://react.dev/), [Vite](https://vite.dev/guide/), [SQLite WASM](https://sqlite.org/wasm/doc/trunk/index.md), [Expo](https://docs.expo.dev/), [Skia](https://shopify.github.io/react-native-skia/). Consulte os locks e a documentação Android deste repositório para as versões utilizadas.

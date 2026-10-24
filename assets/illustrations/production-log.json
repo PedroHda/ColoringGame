@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen",
+  "resolutionRequest": "2560x1600; tool returned original native dimensions listed in manifest",
+  "assets": [
+    {
+      "id": "p01-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-d1b097c2-ffc9-4dba-b621-bb7ac8735605.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p01-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-8256361e-8b2f-4535-b6fe-46d8c2a3b167.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p01-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-6c32c2f1-6965-4031-941e-388f00a9a1a9.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p01-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-b1b6baad-01b8-4b8c-bb10-9bb911c1a855.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p01-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-d9b6d730-6937-47df-b3c6-5f1b43edde67.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p02-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-7eb8675a-71ee-4993-8e05-30e0ddcd2bfc.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p02-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-d4b4a483-0bff-4b56-bafa-6934f70176c6.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p02-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-5b1ef795-e974-493f-85bb-0cdcb03d454a.png",
+      "visualReview": "approved",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p02-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-7fce1d32-40cc-4e65-baac-8198b5debdd7.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p02-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-789ecdf7-15cc-4a7f-947b-478a3872fb3b.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p03-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-5884ccf4-0a84-4f91-8df5-b924debd4408.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p03-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-79509783-0e75-426a-b267-a9d35da87a88.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p03-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-dcf24d51-fe74-4a42-9a0d-8e25b58890a0.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p03-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-468e9f7d-5522-4758-a728-f39fdff6471b.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p03-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-a68172a3-a877-457a-863a-3e26ef2a6567.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p04-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-6b23d58e-4836-4359-9cd0-45b618538ba3.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p04-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-32896eac-7f35-4b3c-8059-62f995fd59c2.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p04-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-7d219698-4923-4d0e-9ac2-ac9e1bda273e.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p04-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-0c301e7b-d217-4add-b213-a444f12abb97.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p04-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-5dc34684-36fe-44b1-8c15-9eee4059753d.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p05-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-00faa7e6-44b2-4f8b-a97d-69358ed62be5.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p05-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-d600cfc5-e5f3-41fa-b6fe-862598478baa.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p05-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-5a2ade46-afcc-4277-aa45-b70e57101ff8.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p05-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-228cbd04-011e-48b3-acf1-6e76627da27c.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p05-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-27ad9b25-7cd4-44c1-88cc-df08299ebd37.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p06-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-c0ddc3e0-2265-4edc-8c67-aaaf9b78fb29.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p06-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-5613a0d5-976e-465c-998f-651cb10cdca2.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p06-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-67333bf3-0081-4bc3-8080-598613e5608b.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p06-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-17db3d87-236e-447f-ae5b-044b40e4c02d.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p06-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-3d27c295-c6a9-4c31-be2f-8da0cbff0a6c.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p07-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-52e4bd34-fb87-4bfa-b412-cf762e0eaef6.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p07-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-4a25c1a5-2962-42d7-91c5-b2e9193df073.png",
+      "visualReview": "required",
+      "note": "Original nativo; resolução real no manifesto."
+    },
+    {
+      "id": "p07-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-82190323-3cb2-4996-8c1f-2b9c01a33e6f.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p07-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-1f6a1f18-a212-42c6-8583-9c9ec481fc94.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p07-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-0f29393f-260d-428b-81be-9d90acf0e63e.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p08-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-e04552d1-67d8-4dfd-9311-2bfe9b640b97.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p08-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-a43d4d3f-238d-4505-a6b6-c42eeee6421f.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p08-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-f19ae936-31ba-413e-8653-0d30c86e4797.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p08-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-a1253137-e994-43f6-94b3-6ba8b2a7fc92.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p08-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-20e8c8e6-6c77-4626-ac52-db1260f62489.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p09-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-2ebec319-6a76-498d-ac98-834ffc52525f.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p09-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-7841bf7c-c08e-43d0-853a-23a606ca5f13.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p09-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-b13630c9-dce9-4fd1-89f0-0dff39a2ad0d.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p09-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-807683e0-082a-4836-9584-b9c6a371d784.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p09-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-8048f0ee-07a0-41bf-9032-44e29dc614c7.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p10-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-ef04843d-a875-4fdc-9274-6c974979b6e9.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p10-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-0d8260c9-f83e-4770-8f1b-f9315b314197.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p10-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-482a3176-6997-417e-86b0-91b7be158583.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p10-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-8712cfa9-7001-4fc4-8558-800391c071b5.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p10-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-38df38bb-7e9a-4fe8-a65d-e223e118342e.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p11-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-fab33aa6-67dc-470e-8fa3-7c4899f954a1.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p11-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-389dbb1e-4e2a-4d75-9024-bb66ac4641ae.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p11-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-3dcdb9db-12be-46c4-baee-b21e1cef481a.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p11-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-7d4baaf5-d9a2-461b-bcfd-ea601085bb91.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p11-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-07deb48b-ea1c-4a02-adbf-9b10ad51e0a5.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p12-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-86722270-e678-4d67-b0df-d90ac36d7ba3.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p12-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-75a6b3d5-a1ad-48d5-90eb-6af8ddb4a453.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p12-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-13e2a700-4d03-43e4-8d16-52a740b9cf1e.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p12-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-07ddd811-2d88-4c31-993a-e6984f927464.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p12-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-4b944421-d23b-434c-9f22-5ff14067e989.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p13-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-f1af0096-fce7-4047-8a8b-99f5d8c47dfb.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p13-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-239f6a19-ac18-4010-a3a7-905e60ce7212.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p13-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-8e4cd31a-5e03-4de6-8be9-ac255d69314d.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p13-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-74cb1764-d7ae-450b-aea0-c3b7fb82cece.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p13-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-3e7a382b-8a22-4bd3-95e7-161ecc46ef6a.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p14-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-f1489cda-9ade-4db7-bca0-9c0cc3c9dcde.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p14-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-61d83bb1-e73a-4649-a159-166bb933a127.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p14-s03",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-5ef47935-a006-47a3-8df2-d4139ba80fd6.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p14-s04",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-12f360fc-0fa4-46d0-b7bd-e2d592a68d38.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p14-s05",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-2d0b11fb-b571-4eb3-81a3-e69b4d3c9a63.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p15-s01",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-d3d89262-0c84-4fdc-b2d1-088fe37d2fb2.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    },
+    {
+      "id": "p15-s02",
+      "tool": "built-in image_gen",
+      "sourceFilename": "exec-78358ccb-9949-45d7-a799-9431adfce76a.png",
+      "visualReview": "approved",
+      "note": "Original nativo preservado; resolução real no manifesto."
+    }
+  ],
+  "attempts": [
+    {
+      "id": "p09-s03",
+      "tool": "built-in image_gen",
+      "status": "output-moderation-blocked",
+      "note": "Primeiro pedido com figura esculpida drapeada não retornou arquivo. Prompt editorial revisado para bustos de retrato e pessoas vestidas; segunda tentativa retornou imagem aprovada."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+node_modules/
+.expo/
+android/
+ios/
+build-bundle/
+assets/illustrations/
+*.jks
+*.keystore
+credentials.json
