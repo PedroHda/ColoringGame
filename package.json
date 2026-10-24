@@ -1,12 +1,35 @@
 {
   "name": "colore-prototype",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "private": true,
   "type": "module",
-  "description": "Colorê — uma aventura de pintura pela história, com nove épocas e ateliê livre.",
+  "description": "Colorê — pintura livre, jornada histórica, personagem e ateliê na web e no Android.",
   "scripts": {
-    "start": "node server.mjs",
-    "check": "node --check dist/history/app.js && node --check dist/history/painter.js && node --check dist/history/state.js && node --check dist/history/scenes.js && node --check dist/paint-effects.js && node --check server.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "start": "vite --config apps/web/vite.config.ts --host 127.0.0.1",
+    "legacy": "node server.mjs",
+    "build": "node scripts/sync-clothing.mjs && vite build --config apps/web/vite.config.ts && node scripts/finish-web-build.mjs",
+    "preview": "vite preview --config apps/web/vite.config.ts --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test:next": "tsx --test packages/**/*.test.ts",
+    "check": "npm run typecheck && node --check dist/history/app.js && node --check dist/history/painter.js && node --check dist/history/state.js && node --check dist/history/scenes.js && node --check dist/paint-effects.js && node --check server.mjs",
+    "assets:check": "node scripts/validate-assets.mjs --playable",
+    "assets:sync": "node scripts/validate-assets.mjs --sync && node scripts/sync-clothing.mjs",
+    "test": "node --test tests/*.test.mjs && tsx --test packages/**/*.test.ts"
+  },
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "3.50.4-build1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^0.1.80",
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "prettier": "3.6.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.0"
   }
 }

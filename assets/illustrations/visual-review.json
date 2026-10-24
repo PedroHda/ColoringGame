@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "note": "Inspeção realizada após abrir cada imagem; métricas no manifest.json. Não substitui revisão histórica especializada.",
+  "assets": [
+    {
+      "id": "p01-s01",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p01-s02",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p01-s03",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p01-s04",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p01-s05",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p02-s01",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p02-s02",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p02-s03",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p02-s04",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p02-s05",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p03-s01",
+      "status": "approved",
+      "note": "Métrica inicial: 61,65% branco ≥242. Linhas finas em canal, zigurate e oficinas mantêm superfícies pintáveis; hachuras de palmeiras/cestos justificam a revisão. Valor atual verificável no manifesto."
+    },
+    {
+      "id": "p03-s02",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p03-s03",
+      "status": "approved",
+      "note": "Tijolos, ruas, tanque e fachadas da cidade do Indo continuam claros e reconhecíveis para pintar; linhas de alvenaria densas reduzem branco puro, sem tinta prévia."
+    },
+    {
+      "id": "p03-s04",
+      "status": "approved",
+      "note": "Telhados, vasos e plantações da cidade Shang são definidos por traços finos; superfícies claras sem tinta aplicada."
+    },
+    {
+      "id": "p03-s05",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p04-s01",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p04-s02",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p04-s03",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p04-s04",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p04-s05",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p05-s01",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p05-s02",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p05-s03",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p05-s04",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p05-s05",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p06-s01",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p06-s02",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p06-s03",
+      "status": "approved",
+      "note": "Templo de Angkor, reservatório e casas têm contornos claros. Hachuras de torres, palmeiras e campos explicam a densidade, com maioria branca preservada."
+    },
+    {
+      "id": "p06-s04",
+      "status": "approved",
+      "note": "Alojamento de caravanas tem tapetes ornamentados e pelagem desenhados por linhas; paredes, roupas e pátio mantêm áreas claras distintas para pintar."
+    },
+    {
+      "id": "p06-s05",
+      "status": "approved",
+      "note": "Cenário distinto aberto e inspecionado: contornos reconhecíveis, áreas predominantemente claras para pintar; sem preenchimento colorido, números ou interface. Qualquer exceção automática só é liberada se a métrica confirmar >50% branco."
+    },
+    {
+      "id": "p07-s01",
+      "status": "approved",
+      "note": "Castelo, aldeia e roda d'água têm áreas brancas reconhecíveis; linhas de alvenaria, telhas e hortas explicam densidade do traço."
+    },
+    {
+      "id": "p07-s02",
+      "status": "approved",
+      "note": "Mercado medieval mantém coberturas, roupas, pão e fachadas claros; pavimento, madeira e cestos usam textura de linhas, não pintura."
+    },
+    {
+      "id": "p07-s03",
+      "status": "approved",
+      "note": "Scriptorium e jardim de ervas distintos, com pergaminhos apenas delineados; roupas, muros e caminhos claros preservam áreas para pintar."
+    },
+    {
+      "id": "p07-s04",
+      "status": "approved",
+      "note": "Pátio de estudos de Bagdá com manuscritos e astrolábio, fonte e arcadas; traços decorativos sem preenchimentos coloridos e superfícies claras."
+    },
+    {
+      "id": "p07-s05",
+      "status": "approved",
+      "note": "Oficinas ibéricas de pedra, madeira e azulejos em pátio com arcadas; bordas definidas e grandes áreas claras nas paredes, pisos e roupas."
+    },
+    {
+      "id": "p08-s01",
+      "status": "approved",
+      "note": "Estaleiro com casco em construção, ferramentas, carpinteiros e velas; perspectiva coerente, contornos pretos e superfícies abertas claras."
+    },
+    {
+      "id": "p08-s02",
+      "status": "approved",
+      "note": "Porto do Índico com embarcação de vela latina e trabalhadores no cais; céu, velas e fachadas claros em desenho de contorno."
+    },
+    {
+      "id": "p08-s03",
+      "status": "approved",
+      "note": "Instrumentos de navegação e mapa sem legendas em convés; pequenas graduações fazem parte do instrumento, sem números de regiões de pintura. Velas, mesa e costa permanecem claras."
+    },
+    {
+      "id": "p08-s04",
+      "status": "approved",
+      "note": "Aldeia costeira indígena com canoas, roças, cerâmica e construção de palha; pessoas em atividades cotidianas, embarcação distante; traço monocromático com superfícies claras."
+    },
+    {
+      "id": "p08-s05",
+      "status": "approved",
+      "note": "Cultivos e troca de alimentos em pátio portuário; folhas delineadas, roupas, mesa e edifícios claros, detalhes reconhecíveis para pintura livre."
+    },
+    {
+      "id": "p09-s01",
+      "status": "approved",
+      "note": "Praça renascentista com artistas, fonte e arcadas; telas delineadas sem pintura aplicada, arquitetura e roupas em áreas claras."
+    },
+    {
+      "id": "p09-s02",
+      "status": "approved",
+      "note": "Ateliê de pigmentos e pintura, almofarizes, pincéis e modelos; superfícies majoritariamente brancas e contornos definidos sem preenchimento colorido."
+    },
+    {
+      "id": "p09-s03",
+      "status": "approved",
+      "note": "Aprovação visual individual com 59,03% de branco: hachuras em madeira, ferramentas e mármore explicam a densidade. Bustos de retrato, roupas e pátio mantêm superfícies claras delimitadas; pessoas vestidas e sem escultura de corpo inteiro."
+    },
+    {
+      "id": "p09-s04",
+      "status": "approved",
+      "note": "Estudo renascentista de plantas e mecanismos, caderno com desenhos de aves e botânica sem texto; roupas, páginas e vista urbana claras."
+    },
+    {
+      "id": "p09-s05",
+      "status": "approved",
+      "note": "Ateliê de perspectiva com grade de observação e sólidos geométricos; telas, arquitetura e roupas claros, sem preenchimento de cor."
+    },
+    {
+      "id": "p10-s01",
+      "status": "approved",
+      "note": "Oficina de óptica com polimento de lentes e instrumentos de observação; superfícies grandes claras, ferramentas em traços nítidos."
+    },
+    {
+      "id": "p10-s02",
+      "status": "approved",
+      "note": "Jardim botânico e estufa com caderno de observação, sementes e folhas; vegetação delineada e grandes áreas brancas no papel, roupa e caminhos."
+    },
+    {
+      "id": "p10-s03",
+      "status": "approved",
+      "note": "Posto telegráfico histórico com operador, fios, baterias e rua ao fundo; relógio sem numerais e papéis sem texto, superfícies claras."
+    },
+    {
+      "id": "p10-s04",
+      "status": "approved",
+      "note": "Consultório do século XIX com exame e cuidados de higiene, pessoas vestidas, instrumentos delineados e superfícies claras."
+    },
+    {
+      "id": "p10-s05",
+      "status": "approved",
+      "note": "Laboratório de invenção com motor, engrenagens e vidraria sem espetáculo perigoso; papel, roupas e paredes claros."
+    },
+    {
+      "id": "p11-s01",
+      "status": "approved",
+      "note": "Casa de máquinas com grande roda e motor a vapor, canal à distância; áreas abertas claras nos pisos, máquina e janelas."
+    },
+    {
+      "id": "p11-s02",
+      "status": "approved",
+      "note": "Aprovação visual individual com 58,09% de branco: alvenaria, água do canal e ferramentas têm linhas densas, mas bancadas, roupas e fachadas conservam superfícies claras distintas para pintura livre."
+    },
+    {
+      "id": "p11-s03",
+      "status": "approved",
+      "note": "Estação ferroviária com locomotiva, bagagens e plataforma; fumaça apenas delineada, grandes áreas claras no trem, roupas e chão."
+    },
+    {
+      "id": "p11-s04",
+      "status": "approved",
+      "note": "Bairro operário junto ao canal com pavimentação e bomba de água; alvenaria e água em linhas finas, superfícies abertas claras."
+    },
+    {
+      "id": "p11-s05",
+      "status": "approved",
+      "note": "Fábrica têxtil com teares e pessoas adultas trabalhando; fios e cestos detalhados por linhas, tecidos, pisos e roupas claros para pintar."
+    },
+    {
+      "id": "p12-s01",
+      "status": "approved",
+      "note": "Praça latino-americana com bonde, fonte, vendedores e obras; perspectiva ampla, céu, fachadas e trilhos claros sem textos ou cor."
+    },
+    {
+      "id": "p12-s02",
+      "status": "approved",
+      "note": "Aprovação visual individual com 59,15% de branco: cobertura metálica, calçamento e rodas concentram traços finos. Ônibus, bonde, roupas e fachadas mantêm áreas brancas abertas e reconhecíveis."
+    },
+    {
+      "id": "p12-s03",
+      "status": "approved",
+      "note": "Reconstrução comunitária de biblioteca, transporte de livros e cuidado do jardim; sem violência, superfícies claras e objetos definidos."
+    },
+    {
+      "id": "p12-s04",
+      "status": "approved",
+      "note": "Reunião comunitária por direitos civis com participantes diversos e cadeirante; cartazes vazios, roupas e praça claras sem marcas políticas."
+    },
+    {
+      "id": "p12-s05",
+      "status": "approved",
+      "note": "Festival de artes com músicos, cinema e mural apenas delineado; tela branca e áreas claras em mesas, roupas e praça."
+    },
+    {
+      "id": "p13-s01",
+      "status": "approved",
+      "note": "Laboratório de computação dos anos 1950 com gabinetes, fitas e cartões perfurados; sem laptop moderno, roupas e superfícies amplas claras."
+    },
+    {
+      "id": "p13-s02",
+      "status": "approved",
+      "note": "Sala de montagem de satélite científico com equipe, ferramentas e painéis; satélite em contornos, sem explosão ou logos, piso e paredes brancos."
+    },
+    {
+      "id": "p13-s03",
+      "status": "approved",
+      "note": "Estação de telecomunicações em colina com antena e manutenção de gabinete; comunidade, água e montanhas ao fundo, áreas abertas claras."
+    },
+    {
+      "id": "p13-s04",
+      "status": "approved",
+      "note": "Biblioteca pública com computadores CRT, cabos e auxílio da bibliotecária; telas vazias, livros e pessoas delineados sem interface colorida."
+    },
+    {
+      "id": "p13-s05",
+      "status": "approved",
+      "note": "Espaço criativo contemporâneo com desenho digital, impressão 3D e costura; telas com desenho de linhas e pessoas diversas, superfícies claras."
+    },
+    {
+      "id": "p14-s01",
+      "status": "approved",
+      "note": "Aprovação visual individual com 60,71% de branco: janelas e vegetação são detalhadas; há pequenas áreas cinza neutras no leito viário e veículos. Fachadas, parque, transporte e roupas preservam maioria clara para pintura livre, sem preenchimento colorido."
+    },
+    {
+      "id": "p14-s02",
+      "status": "approved",
+      "note": "Feira cultural com cerâmica, tecidos e música; padrões em contorno, bancas, roupas e praça claros sem texto ou logos."
+    },
+    {
+      "id": "p14-s03",
+      "status": "approved",
+      "note": "Laboratório contemporâneo de pesquisa com microscópio e vidraria; equipe diversa com jalecos, telas e bancadas claras sem marca."
+    },
+    {
+      "id": "p14-s04",
+      "status": "approved",
+      "note": "Restauração de margem de rio com plantio, limpeza e fauna; água e vegetação delineadas, roupas e áreas amplas claras."
+    },
+    {
+      "id": "p14-s05",
+      "status": "approved",
+      "note": "Mural comunitário com motivos históricos de mão, vaso e barco, todas as formas apenas em contorno; pátio, roupas e fachadas claros."
+    },
+    {
+      "id": "p15-s01",
+      "status": "approved",
+      "note": "Bairro sustentável imaginado com hortas, bonde e oficina de bicicletas; desenho de contornos sobre branco, espaços e objetos distintos."
+    },
+    {
+      "id": "p15-s02",
+      "status": "approved",
+      "note": "Paisagem de energia renovável com painéis solares, turbinas e manutenção; cenário rural reconhecível, céu e campos claros sem preenchimento colorido."
+    },
+    {
+      "id": "p15-s03",
+      "status": "approved",
+      "note": "Base lunar imaginada com módulos, estufa, painéis e veículo científico; Terra e céu brancos delineados, sem espetáculo de guerra ou logos."
+    },
+    {
+      "id": "p15-s04",
+      "status": "approved",
+      "note": "Oficina inclusiva com ferramentas adaptadas, pessoas diversas e robô auxiliar; roupas, mesa e jardim claros, contornos nítidos sem interface."
+    },
+    {
+      "id": "p15-s05",
+      "status": "approved",
+      "note": "Jardim comunitário futuro com plantio, água corrente e mural de memórias em contorno; áreas claras preservadas em meio ao detalhe de vegetação e arquitetura."
+    }
+  ]
+}
