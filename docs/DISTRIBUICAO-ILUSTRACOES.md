@@ -61,3 +61,7 @@ node --test tests/illustration-optimization.test.mjs
 ```
 
 Os testes conferem pixels decodificados exatos de grayscale e RGB, CRC conhecido e corrupção de chunks, rejeição de conversão com qualquer cor/alfa incompatível e restrição de destinos antes de qualquer escrita.
+
+## Distribuição final de 75 ilustrações
+
+Em 24/10/2026, os dois builds produziram o mesmo resultado: 218.591.971 bytes de masters → 185.231.632 bytes de PNGs de distribuição, com igualdade de todos os pixels RGBA nas 75 imagens. A economia é de 33.360.339 bytes (~15,3%). As 75 miniaturas somam 9.278.506 bytes. Os manifestos derivados ficam em `build/illustrations/distribution-manifest.json` e `apps/mobile/assets/illustrations/distribution-manifest.json`. Os masters continuam intactos e abaixo da referência HD; compressão sem perdas não aumenta a resolução.

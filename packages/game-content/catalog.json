@@ -1150,10 +1150,10 @@
           "title": "Exploração do universo",
           "intro": "Uma estação observa sinais e prepara uma sonda. Explorar pode ampliar perguntas sem prometer respostas simples. Nesta possibilidade de futuro, o trabalho em equipe continua no centro da descoberta.",
           "outro": "O desenho de uma sonda divide espaço com uma mão humana. A próxima página pergunta como a tecnologia pode apoiar a vida cotidiana.",
-          "asset": null,
-          "width": 0,
-          "height": 0,
-          "resolutionStatus": "missing"
+          "asset": "/illustrations/p15-s03.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
         },
         {
           "id": "p15-s04",
@@ -1162,10 +1162,10 @@
           "title": "Tecnologia e humanidade",
           "intro": "Uma oficina projeta recursos de acessibilidade junto às pessoas que os usarão. A tecnologia faz mais sentido quando escuta necessidades reais. Você escolhe as cores de uma criação colaborativa.",
           "outro": "Uma peça é testada e melhorada com a ajuda de todos. Para a última página, a oficina leva suas ideias ao jardim do bairro.",
-          "asset": null,
-          "width": 0,
-          "height": 0,
-          "resolutionStatus": "missing"
+          "asset": "/illustrations/p15-s04.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
         },
         {
           "id": "p15-s05",
@@ -1174,10 +1174,10 @@
           "title": "O futuro que podemos criar",
           "intro": "No jardim, as lembranças da viagem viram conversa sobre o amanhã. Há espaço para dúvida, cuidado e imaginação. Termine quando desejar: uma página concluída também pode ser o início de outra história.",
           "outro": "Sua jornada atravessou quinze caminhos. As cores são suas, e o caderno pode ser aberto outra vez. Qual encontro você gostaria de pintar de um jeito novo?",
-          "asset": null,
-          "width": 0,
-          "height": 0,
-          "resolutionStatus": "missing"
+          "asset": "/illustrations/p15-s05.png",
+          "width": 1586,
+          "height": 992,
+          "resolutionStatus": "below-target"
         }
       ]
     }

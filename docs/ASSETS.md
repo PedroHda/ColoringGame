@@ -2,6 +2,8 @@
 
 O catálogo da V6 contém 15 caminhos e 75 fases com introdução, conclusão, paleta e recompensa. A presença no catálogo editorial não significa que uma imagem foi entregue: somente `asset !== null` representa um arquivo real instalado e validado.
 
+Em 24 de outubro de 2026, as **75 ilustrações distintas** estão instaladas, inspecionadas e ativas: 75 hashes diferentes, nenhum arquivo ausente ou rejeitado. Os PNG originais somam 218.591.971 bytes e mantêm a resolução nativa real de **1586 × 992**. `--playable` passa; `--complete` retorna falha apenas porque as 75 imagens permanecem abaixo da referência de 2048 × 1280. A entrega jogável não deve ser descrita como cumprimento da resolução HD solicitada.
+
 ## Arquivos e contrato
 
 - `packages/game-content/content-source.mjs`: fonte editorial, contexto histórico, narrativa e composição específica de cada cena.
@@ -11,6 +13,7 @@ O catálogo da V6 contém 15 caminhos e 75 fases com introdução, conclusão, p
 - `assets/illustrations/manifest.json`: status, dimensões reais, hash, volume de branco e presença de cor de cada arquivo.
 - `assets/illustrations/prompts.json`: os 75 prompts específicos de produção, gerados da fonte editorial.
 - `assets/illustrations/production-log.json`: referências dos arquivos gerados e inspeções de produção.
+- `assets/illustrations/visual-review.json`: aprovação individual e justificativa visual; o manifesto também incorpora cada revisão.
 - `scripts/validate-assets.mjs`: verificação reprodutível, sem serviço externo e sem alterar pixels.
 
 Índices de caminhos e fases começam em zero; os identificadores públicos começam em um: `path-01`, `p01-s01`. Assets são servidos por `/illustrations/<id>.png`. O empacotador web deve copiar os PNG para essa pasta; o aplicativo Android deve incluí-los no bundle local. Não existe geração por IA durante o jogo.
@@ -42,6 +45,8 @@ node scripts/validate-assets.mjs --complete
 Sem `--sync`, o verificador também exige que o catálogo corresponda aos arquivos presentes. `--playable` verifica os arquivos e a consistência do catálogo, sem afirmar que todas as 75 imagens já foram entregues. `--complete` exige 75 imagens aprovadas e todas na resolução de referência.
 
 O verificador lê PNG de 8 bits em escala de cinza, RGB ou RGBA, não entrelaçado. Reconstrói os filtros PNG e mede os pixels após descompressão; não confunde apenas os metadados do arquivo com a sua aparência. Usa limites de branco/cor como apoio à inspeção manual. Não calcula regiões nem substitui pinceladas por preenchimentos.
+
+O limiar automático exige 62% de pixels brancos. Uma imagem entre 50% e 62% só pode ser liberada com aprovação visual individual registrada, sem reduzir ou ocultar sua métrica. A série contém 11 dessas revisões: a menor proporção branca medida é 57,01%. Detalhes de alvenaria, tecidos, vegetação, água e ferramentas explicam o traço mais denso, enquanto as superfícies principais permanecem claras para pintura livre.
 
 ## Limite real de resolução
 

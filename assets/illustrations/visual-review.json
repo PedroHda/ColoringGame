@@ -215,7 +215,7 @@
     {
       "id": "p09-s03",
       "status": "approved",
-      "note": "Pátio de escultores com bustos de retrato e modelos arquitetônicos; pessoas vestidas, superfícies claras e ferramentas identificáveis; sem escultura de corpo inteiro."
+      "note": "Aprovação visual individual com 59,03% de branco: hachuras em madeira, ferramentas e mármore explicam a densidade. Bustos de retrato, roupas e pátio mantêm superfícies claras delimitadas; pessoas vestidas e sem escultura de corpo inteiro."
     },
     {
       "id": "p09-s04",
@@ -260,7 +260,7 @@
     {
       "id": "p11-s02",
       "status": "approved",
-      "note": "Oficina industrial junto ao canal, torneiros e ferramentas; hachuras de água e tijolos deixam a maioria clara, com objetos e superfícies reconhecíveis."
+      "note": "Aprovação visual individual com 58,09% de branco: alvenaria, água do canal e ferramentas têm linhas densas, mas bancadas, roupas e fachadas conservam superfícies claras distintas para pintura livre."
     },
     {
       "id": "p11-s03",
@@ -285,7 +285,7 @@
     {
       "id": "p12-s02",
       "status": "approved",
-      "note": "Terminal urbano dos anos 1930 com ônibus, bondes e bicicletas; veículos e pessoas em contornos, céu e fachadas claros."
+      "note": "Aprovação visual individual com 59,15% de branco: cobertura metálica, calçamento e rodas concentram traços finos. Ônibus, bonde, roupas e fachadas mantêm áreas brancas abertas e reconhecíveis."
     },
     {
       "id": "p12-s03",
@@ -330,7 +330,7 @@
     {
       "id": "p14-s01",
       "status": "approved",
-      "note": "Metrópole contemporânea com transporte coletivo e rampa acessível; fachadas e parque claros, pequenas áreas cinza neutras no leito viário e veículos sem cor aplicada."
+      "note": "Aprovação visual individual com 60,71% de branco: janelas e vegetação são detalhadas; há pequenas áreas cinza neutras no leito viário e veículos. Fachadas, parque, transporte e roupas preservam maioria clara para pintura livre, sem preenchimento colorido."
     },
     {
       "id": "p14-s02",
@@ -361,6 +361,21 @@
       "id": "p15-s02",
       "status": "approved",
       "note": "Paisagem de energia renovável com painéis solares, turbinas e manutenção; cenário rural reconhecível, céu e campos claros sem preenchimento colorido."
+    },
+    {
+      "id": "p15-s03",
+      "status": "approved",
+      "note": "Base lunar imaginada com módulos, estufa, painéis e veículo científico; Terra e céu brancos delineados, sem espetáculo de guerra ou logos."
+    },
+    {
+      "id": "p15-s04",
+      "status": "approved",
+      "note": "Oficina inclusiva com ferramentas adaptadas, pessoas diversas e robô auxiliar; roupas, mesa e jardim claros, contornos nítidos sem interface."
+    },
+    {
+      "id": "p15-s05",
+      "status": "approved",
+      "note": "Jardim comunitário futuro com plantio, água corrente e mural de memórias em contorno; áreas claras preservadas em meio ao detalhe de vegetação e arquitetura."
     }
   ]
 }

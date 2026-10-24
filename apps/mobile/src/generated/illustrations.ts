@@ -68,6 +68,13 @@ export const illustrationAssets: Record<string, number> = {
   '/illustrations/p14-s01.png': require('../../assets/illustrations/p14-s01.png'),
   '/illustrations/p14-s02.png': require('../../assets/illustrations/p14-s02.png'),
   '/illustrations/p14-s03.png': require('../../assets/illustrations/p14-s03.png'),
+  '/illustrations/p14-s04.png': require('../../assets/illustrations/p14-s04.png'),
+  '/illustrations/p14-s05.png': require('../../assets/illustrations/p14-s05.png'),
+  '/illustrations/p15-s01.png': require('../../assets/illustrations/p15-s01.png'),
+  '/illustrations/p15-s02.png': require('../../assets/illustrations/p15-s02.png'),
+  '/illustrations/p15-s03.png': require('../../assets/illustrations/p15-s03.png'),
+  '/illustrations/p15-s04.png': require('../../assets/illustrations/p15-s04.png'),
+  '/illustrations/p15-s05.png': require('../../assets/illustrations/p15-s05.png'),
 };
 export const illustrationThumbnails: Record<string, number> = {
   '/illustrations/p01-s01.png': require('../../assets/illustrations/p01-s01.thumb.png'),
@@ -138,4 +145,11 @@ export const illustrationThumbnails: Record<string, number> = {
   '/illustrations/p14-s01.png': require('../../assets/illustrations/p14-s01.thumb.png'),
   '/illustrations/p14-s02.png': require('../../assets/illustrations/p14-s02.thumb.png'),
   '/illustrations/p14-s03.png': require('../../assets/illustrations/p14-s03.thumb.png'),
+  '/illustrations/p14-s04.png': require('../../assets/illustrations/p14-s04.thumb.png'),
+  '/illustrations/p14-s05.png': require('../../assets/illustrations/p14-s05.thumb.png'),
+  '/illustrations/p15-s01.png': require('../../assets/illustrations/p15-s01.thumb.png'),
+  '/illustrations/p15-s02.png': require('../../assets/illustrations/p15-s02.thumb.png'),
+  '/illustrations/p15-s03.png': require('../../assets/illustrations/p15-s03.thumb.png'),
+  '/illustrations/p15-s04.png': require('../../assets/illustrations/p15-s04.thumb.png'),
+  '/illustrations/p15-s05.png': require('../../assets/illustrations/p15-s05.thumb.png'),
 };

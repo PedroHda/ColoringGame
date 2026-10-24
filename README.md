@@ -10,7 +10,7 @@ Colorê é um jogo de pintura livre e exploração histórica. Cada ilustração
 
 A V6 evolui o protótipo existente para React e TypeScript. A pintura principal usa traços contínuos editáveis, com tinta sob os contornos. O código, as nove cenas e os dados da V5 continuam preservados; a [documentação anterior](docs/README-V5.md) explica a experiência por regiões.
 
-> **Estado verificável:** a web funciona com pintura, SQLite, progresso, personagem, roupas e backups. O projeto Android tem renderizador nativo, configuração de APK e bundle verificável. **Ainda não há APK compilado nem teste em aparelho.** O catálogo prevê 15 caminhos e 75 ilustrações; o [manifesto de assets](assets/illustrations/manifest.json) informa exatamente quais imagens estão disponíveis. Os masters gerados têm 1586 × 992, abaixo da referência solicitada de 2048 × 1280; não foram ampliados para simular HD. Consulte o [estado da entrega](docs/STATUS-V6.md) antes de distribuir.
+> **Estado verificável:** a web funciona com pintura, SQLite, progresso, personagem, roupas e backups. O projeto Android tem renderizador nativo, configuração de APK e bundle verificável. **Ainda não há APK compilado nem teste em aparelho.** Há 15 caminhos e 75 ilustrações jogáveis; o [manifesto de assets](assets/illustrations/manifest.json) informa exatamente quais imagens estão disponíveis. Os masters gerados têm 1586 × 992, abaixo da referência solicitada de 2048 × 1280; não foram ampliados para simular HD. Consulte o [estado da entrega](docs/STATUS-V6.md) antes de distribuir.
 
 ## Veja o que está implementado
 

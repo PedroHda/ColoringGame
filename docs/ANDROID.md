@@ -192,4 +192,3 @@ Os itens abaixo são o roteiro de testes em hardware, não uma declaração de a
 - [ ] Narrar com e sem voz instalada, testar volume e preferência tátil.
 - [ ] Medir memória, latência e fluidez em aparelhos modestos e intermediários com pinturas longas.
 - [ ] Verificar instalação/atualização com assinatura definitiva, concessão mínima de permissões e política de backup Android.
-
