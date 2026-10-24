@@ -17,7 +17,7 @@ Conferência de 24 de outubro de 2026. Este documento distingue implementação,
 | Guarda-roupa | Nove peças SVG pintáveis, três iniciais e seis recompensas de caminhos, encaixes persistentes |
 | Galeria e dados | Obras editáveis, nomes, miniaturas, SQLite transacional, backup web/Android e cópias antigas |
 | Offline web | Service Worker e ilustrações sob demanda ou download por caminho |
-| Android | Código React Native/Skia, SQLite nativo, arquivos locais, orientação, gestos, ícones/splash e perfis APK/AAB configurados |
+| Android | React Native/Skia, SQLite nativo, arquivos locais, gestos e APK de teste compilado para ARM 32/64; perfis APK/AAB configurados |
 | Áudio | Quatro ambiências originais, efeito curto, volumes separados, voz do dispositivo e feedback tátil opcional |
 | Documentação | README V6, imagens reais da web/motor, guia Android, assets, otimização, dados e guarda-roupa |
 
@@ -31,6 +31,8 @@ Conferência de 24 de outubro de 2026. Este documento distingue implementação,
 - Build web final gerado com 75 artes e Service Worker. Bundle Android Hermes final exportado com **164 assets**: 75 ilustrações, 75 miniaturas, nove SVG de roupa e cinco WAV. O `.hbc` tem aproximadamente 4,3 MB; o conjunto de ilustrações comprimidas soma 185.231.632 bytes, além das miniaturas. Isso não é um APK.
 - Os manifestos de distribuição web e Android registram 75/75 comparações RGBA idênticas aos masters.
 - Prebuild Android: fontes Kotlin, Gradle e manifesto gerados com `com.pedrohda.colore`, orientação livre, áudio sem microfone e permissões bloqueadas verificadas. Não equivale a compilar um APK.
+- Compilação binária real: `:app:assembleRelease` passou, incluindo lint vital, com 811 tarefas (257 executadas e 554 atualizadas na tentativa final). O APK `colore-v6.0.0-teste.apk` tem **266.212.914 bytes**, versão 6.0.0/código 6, Android mínimo API 24 e ABIs `arm64-v8a`/`armeabi-v7a`. Código-fonte do build: `62cace7cb29f8ecd989bbfc61ad56b0c3d9e930b`.
+- `apksigner verify`: assinatura v2 válida com certificado Android Debug; `zipalign -c -P 16 -v 4`: aprovado. O manifesto final não solicita câmera, microfone, sobreposição ou acesso geral ao armazenamento. As 75 artes e 75 miniaturas foram encontradas no APK por SHA-256, idênticas aos arquivos de distribuição, e o bundle está incluído. Não houve execução em aparelho/emulador.
 - Web no navegador, durante a implementação: criação de perfil, pintura com mouse, controles de cor/espessura, desfazer/refazer, recarga recuperando traços, conclusão/XP, camiseta pintada/equipada e reabertura offline com servidor parado.
 - A captura `images/personagem-v6.jpg` é dessa execução web; `images/ferramentas-v6.png` é produzida pelo motor real. Não são screenshots de Android.
 - Na conferência posterior, a política de segurança do navegador bloqueou a inspeção da prévia local. As últimas integrações de guarda-roupa, áudio e restauração não tiveram nova verificação visual de ponta a ponta nesta sessão; permanecem verificadas por TypeScript, testes aplicáveis e build.
@@ -40,7 +42,7 @@ A conclusão web grava a obra, o perfil, o progresso e o XP em uma transação. 
 ## Pendências reais
 
 1. **Masters HD:** a ferramenta produziu 1586 × 992. O requisito mínimo de 2048 × 1280 não está atendido. Os originais e prompts específicos foram preservados; não foi aplicado aumento artificial de tamanho. `--complete` deve continuar falhando enquanto a resolução não atender ao contrato.
-2. **APK:** não gerado. Este computador não possui Java/JDK, Android SDK/adb nem projeto EAS autenticado/vinculado. Há comandos reproduzíveis em `ANDROID.md`; não foi criada assinatura em nome do proprietário.
+2. **Assinatura de produção:** o APK de teste já foi gerado e verificado. Utiliza certificado de desenvolvimento; falta configurar a assinatura definitiva do proprietário e validar a atualização antes de distribuição pública. Nenhuma chave privada foi versionada.
 3. **Validação em hardware:** faltam dedo/caneta, pressão, pinça e pan, SQLite e recuperação após encerramento, áudio, exportação/compartilhamento, retrato/paisagem e consumo de memória/bateria em Android. Um bundle Hermes não comprova esses itens.
 4. **Acessibilidade e compatibilidade:** faltam auditoria completa, leitores de tela e matriz de navegadores/aparelhos. O texto continua disponível quando a voz não está instalada.
 
@@ -52,4 +54,4 @@ A auditoria npm do projeto web não apontou vulnerabilidades na conferência ini
 
 ## Próxima etapa de distribuição
 
-Concluir os masters e revisar as últimas integrações no navegador; gerar um APK `preview` com conta/assinatura do proprietário; executar a matriz de testes de `ANDROID.md` em dispositivos; somente então promover uma versão de distribuição. A configuração `production` já prevê AAB para uma futura publicação na Google Play.
+Instalar o APK de teste e executar a matriz de `ANDROID.md` em dispositivos; concluir os masters e revisar as últimas integrações no navegador; configurar a assinatura do proprietário e somente então promover uma versão de distribuição. A configuração `production` já prevê AAB para uma futura publicação na Google Play.

@@ -10,7 +10,7 @@ Colorê é um jogo de pintura livre e exploração histórica. Cada ilustração
 
 A V6 evolui o protótipo existente para React e TypeScript. A pintura principal usa traços contínuos editáveis, com tinta sob os contornos. O código, as nove cenas e os dados da V5 continuam preservados; a [documentação anterior](docs/README-V5.md) explica a experiência por regiões.
 
-> **Estado verificável:** a web funciona com pintura, SQLite, progresso, personagem, roupas e backups. O projeto Android tem renderizador nativo, configuração de APK e bundle verificável. **Ainda não há APK compilado nem teste em aparelho.** Há 15 caminhos e 75 ilustrações jogáveis; o [manifesto de assets](assets/illustrations/manifest.json) informa exatamente quais imagens estão disponíveis. Os masters gerados têm 1586 × 992, abaixo da referência solicitada de 2048 × 1280; não foram ampliados para simular HD. Consulte o [estado da entrega](docs/STATUS-V6.md) antes de distribuir.
+> **Estado verificável:** a web funciona com pintura, SQLite, progresso, personagem, roupas e backups. O Android tem renderizador nativo e **APK de teste compilado**, com assinatura e alinhamento verificados; ainda não houve teste em aparelho. Há 15 caminhos e 75 ilustrações jogáveis; as 75 artes e suas miniaturas foram conferidas dentro do APK. Os masters gerados têm 1586 × 992, abaixo da referência solicitada de 2048 × 1280; não foram ampliados para simular HD. Consulte o [estado da entrega](docs/STATUS-V6.md) antes de distribuir.
 
 ## Veja o que está implementado
 
@@ -145,9 +145,9 @@ eas init
 npm run build:apk
 ```
 
-O proprietário precisa vincular o projeto à sua conta Expo e configurar assinatura; nenhuma conta, credencial ou chave foi inventada ou incluída no repositório. Para build local, instale JDK e Android SDK, execute `npm run prebuild:android` e depois o Gradle. Os comandos, instalação via `adb`, assinatura, adaptação Windows e roteiro em aparelho estão em [Android e distribuição](docs/ANDROID.md).
+Para usar o EAS, o proprietário precisa vincular o projeto à sua conta Expo e configurar assinatura; nenhuma conta, credencial ou chave foi incluída no repositório. O APK de teste desta entrega foi compilado localmente com JDK e Android SDK, sem conta Expo. Os comandos, instalação via `adb`, assinatura, adaptação Windows e roteiro em aparelho estão em [Android e distribuição](docs/ANDROID.md).
 
-Este ambiente não possui Java/JDK, Android SDK ou aparelho/emulador configurado. Por isso, não há APK anexado nem comprovação de execução nativa. A configuração e os comandos foram deixados reproduzíveis, conforme a exceção prevista na especificação.
+O arquivo entregue é `colore-v6.0.0-teste.apk`, com 266.212.914 bytes (aproximadamente 266 MB), para Android 7.0/API 24 ou superior em ARM de 32 e 64 bits. É um build `release` independente, assinado com certificado de desenvolvimento para teste. As 75 artes e 75 miniaturas estão incluídas e foram comparadas por SHA-256 com os arquivos de distribuição. O APK e o relatório ficam em `artifacts/android/` no ambiente de entrega; binários gerados não são versionados no Git. **Ainda não houve execução em aparelho ou emulador.**
 
 ## Arquitetura
 
@@ -231,7 +231,7 @@ Os testes automatizados cobrem regressões V5, serialização e interpolação, 
 
 A web foi exercitada no navegador com mouse: criação de perfil, pintura, salvamento, recarga, conclusão, roupa equipada e reabertura offline com o servidor desligado. Os registros de validação e as lacunas estão em [STATUS-V6.md](docs/STATUS-V6.md). Não se declara certificação de acessibilidade, compatibilidade universal ou taxa de quadros garantida.
 
-Pendências de distribuição: masters HD, APK assinado, testes em Android de capacidades diferentes, pressão/caneta e gestos em hardware, memória/bateria, interrupções de áudio e auditoria completa de acessibilidade. Não há multiplayer, conta online ou sincronização automática entre aparelhos.
+Pendências de distribuição: masters HD, assinatura de produção, testes em Android de capacidades diferentes, pressão/caneta e gestos em hardware, memória/bateria, interrupções de áudio e auditoria completa de acessibilidade. Não há multiplayer, conta online ou sincronização automática entre aparelhos.
 
 ## Contribuir, créditos e licença
 

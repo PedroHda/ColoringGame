@@ -2,7 +2,30 @@
 
 O aplicativo em [`apps/mobile/`](../apps/mobile/) usa **React Native + TypeScript + Skia + SQLite nativo**. A interface e a pintura são nativas. Não há WebView nem dependência do servidor web para jogar um pacote instalado.
 
-**Estado desta entrega:** TypeScript, compatibilidade das dependências Expo, configuração pública, empacotamento Hermes Android e geração do projeto nativo foram verificados. Nenhum `.apk` ou `.aab` foi gerado neste ambiente. Não houve execução em aparelho ou emulador; a validação de gestos, GPU, pressão, exportação e recuperação SQLite em dispositivos permanece obrigatória antes da distribuição.
+**Estado desta entrega:** o APK de teste foi compilado localmente, com assinatura e alinhamento verificados. TypeScript, sete testes nativos, empacotamento Hermes e compilação Gradle passaram. Não houve execução em aparelho ou emulador; a validação de gestos, GPU, pressão, exportação e recuperação SQLite em dispositivos permanece pendente.
+
+## APK de teste entregue
+
+| Item | Resultado |
+| --- | --- |
+| Arquivo | `colore-v6.0.0-teste.apk`, em `artifacts/android/` no ambiente de entrega |
+| Tamanho | 266.212.914 bytes, aproximadamente 266 MB |
+| Aplicativo | `com.pedrohda.colore`, versão 6.0.0, código 6 |
+| Compatibilidade declarada | Android 7.0/API 24 ou superior; ARM 32/64 (`armeabi-v7a`, `arm64-v8a`) |
+| Build | `release`, com bundle incluído; independente de Metro e Expo Go |
+| Assinatura | Certificado Android Debug para teste; verificação v2 aprovada |
+| Alinhamento | `zipalign -c -P 16 -v 4` aprovado |
+| Artes offline | 75 ilustrações e 75 miniaturas encontradas por SHA-256 e idênticas aos arquivos de distribuição |
+| Fonte | Commit `62cace7cb29f8ecd989bbfc61ad56b0c3d9e930b` |
+| Execução em hardware | Ainda não realizada |
+
+SHA-256 do APK:
+
+```text
+450a86e1f8bb56f59727f9eea8e5e24d1344dcdd6db9487eea3050ae9e5206af
+```
+
+Transfira o arquivo para o celular e abra-o pelo gerenciador de arquivos. O Android pode solicitar autorização para instalar a partir desse aplicativo. O APK, o arquivo de checksums e o relatório de build são artefatos locais; não são incluídos no Git. A assinatura definitiva para distribuição e atualizações continua sob responsabilidade do proprietário.
 
 ## Versões escolhidas
 
@@ -98,7 +121,15 @@ cd android
 .\gradlew.bat assembleRelease
 ```
 
-O comando de preparação utiliza `scripts/prebuild.mjs`. Neste computador Windows/OneDrive, a primeira execução direta do Expo falhou porque a cópia do template via Node não deixou o diretório nativo no destino (`Project file "MainApplication" does not exist`). O adaptador Windows extrai o **template oficial instalado em `expo/template.tgz`**, copia com `Copy-Item` e então executa a configuração normal do Expo. Não altera o SDK nem as dependências instaladas. Em outros sistemas, usa diretamente o prebuild do Expo. Foram gerados e conferidos `MainApplication.kt`, `MainActivity.kt`, Gradle, manifesto com pacote correto, orientações e bloqueios de permissões. Isso resolve a preparação dos fontes; a compilação binária continua exigindo JDK e Android SDK.
+O APK entregue foi gerado limitando as ABIs aos processadores ARM dos celulares e preservando os PNGs sem recompressão do AAPT:
+
+```powershell
+.\gradlew.bat :app:assembleRelease "-PreactNativeArchitectures=arm64-v8a,armeabi-v7a" "-Pandroid.enablePngCrunchInReleaseBuilds=false" --max-workers=3 --console=plain
+```
+
+O comando de preparação utiliza `scripts/prebuild.mjs`. Neste computador Windows/OneDrive, a primeira execução direta do Expo falhou porque a cópia do template via Node não deixou o diretório nativo no destino (`Project file "MainApplication" does not exist`). O adaptador Windows extrai o **template oficial instalado em `expo/template.tgz`**, copia com `Copy-Item` e então executa a configuração normal do Expo. Não altera o SDK nem as dependências instaladas. Em outros sistemas, usa diretamente o prebuild do Expo. O adaptador também lê e grava Kotlin explicitamente em UTF-8 sem BOM e mantém a declaração `package` antes dos imports; isso corrige a transformação incorreta de `MainActivity.kt` causada pelo `Set-Content -Encoding utf8` do Windows PowerShell 5.1. Os dois arquivos Kotlin gerados foram conferidos após o prebuild.
+
+Em Windows, o Ninja 1.10.2 incluído no CMake 3.22.1 falhou com `Filename longer than 260 characters` em um arquivo gerado de `react-native-safe-area-context`. O suporte a caminhos longos do Windows já estava habilitado. O Ninja foi atualizado para **1.13.2**, preservando uma cópia do executável anterior; o ZIP oficial foi conferido por SHA-256. O projeto foi compilado em um caminho sem espaços ou acentos, fora do OneDrive. Consulte o [guia dos mantenedores de Reanimated para Windows](https://docs.swmansion.com/react-native-reanimated/docs/guides/building-on-windows/), que recomenda Ninja 1.12 ou superior e explica caminhos curtos e suporte a caminhos longos.
 
 O arquivo fica em `apps/mobile/android/app/build/outputs/apk/release/`. Confira a configuração de assinatura gerada **antes de distribuir**: a configuração padrão de desenvolvimento não substitui a assinatura definitiva do proprietário. O diretório `android/` é gerado e ignorado; uma necessidade de código nativo próprio exigirá passar a manter esse diretório e o processo correspondente.
 
@@ -109,9 +140,9 @@ adb devices
 adb install -r caminho\para\colore.apk
 ```
 
-### Limites encontrados neste computador
+### Ambiente utilizado e limites da verificação
 
-Não estão disponíveis `java`, `adb`, `gradle` nem uma instalação do Android SDK. Também não há projeto EAS vinculado e autenticado para esta aplicação. Por isso, o build binário não foi executado. `expo export --platform android` verifica o bundle e seus assets, **não gera APK, não executa código nativo e não comprova comportamento em aparelho**.
+Foram instalados em uma pasta local de ferramentas: Temurin JDK 17.0.20.1, Command-Line Tools 22, Android Platform 36, Build Tools 36.0.0 e 35.0.0, Platform Tools 37.0.1, NDK 27.1.12297006 e CMake 3.22.1 com Ninja 1.13.2. O wrapper utilizou Gradle 9.0.0. Nenhuma conta Expo foi necessária para esse build local. O `assembleRelease` final passou em 2 minutos e 23 segundos, reaproveitando a compilação anterior, e produziu o APK efetivamente verificado. Não houve celular conectado nem emulador disponível. A compilação e a inspeção do binário não comprovam comportamento em aparelho.
 
 ## Pintura e controles
 
