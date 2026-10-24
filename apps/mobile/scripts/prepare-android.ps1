@@ -27,11 +27,16 @@ $projectFiles = @(Get-ChildItem -LiteralPath $javaRoot -Recurse -File | Where-Ob
 foreach ($projectFile in $projectFiles) {
   $source = [System.IO.Path]::GetFullPath($projectFile.FullName)
   if (-not $source.StartsWith($nativeRoot + [System.IO.Path]::DirectorySeparatorChar, [System.StringComparison]::OrdinalIgnoreCase)) { throw 'Fonte fora do Android.' }
-  $contents = Get-Content -LiteralPath $source -Raw
+  # Windows PowerShell 5.1 writes a BOM with Set-Content -Encoding utf8.
+  # Expo's Kotlin transforms can then insert an import before the package.
+  # Repair existing generated files and keep package first, without a BOM.
+  $contents = [System.IO.File]::ReadAllText($source, [System.Text.Encoding]::UTF8).Replace([string][char]0xFEFF, '')
   $packageDeclaration = [Regex]::Match($contents, '(?m)^package\s+([\w.]+)')
   if (-not $packageDeclaration.Success) { throw ('Declaração de pacote ausente em ' + $projectFile.Name) }
   $contents = $contents.Replace($packageDeclaration.Groups[1].Value, $packageName)
-  Set-Content -LiteralPath $source -Value $contents -Encoding utf8
+  $contents = [Regex]::Replace($contents, '(?m)^package\s+[\w.]+[^\S\r\n]*(?:\r?\n)?', '')
+  $contents = "package $packageName`n`n" + $contents.TrimStart([char[]]"`r`n")
+  [System.IO.File]::WriteAllText($source, $contents, (New-Object System.Text.UTF8Encoding($false)))
   $destination = [System.IO.Path]::GetFullPath((Join-Path $packageTarget $projectFile.Name))
   if (-not $destination.StartsWith($nativeRoot + [System.IO.Path]::DirectorySeparatorChar, [System.StringComparison]::OrdinalIgnoreCase)) { throw 'Destino da fonte fora do Android.' }
   if ($source -ne $destination) { Move-Item -LiteralPath $source -Destination $destination -Force }
